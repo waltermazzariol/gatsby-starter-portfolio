@@ -47,12 +47,8 @@ fragment heroFields on MarkdownRemarkFrontmatter {
       image {
         publicURL
           }
-      channels{
-        name
-        link
-         }
-        }
-    }`
+    }
+}`
 
 export const galleryFields = graphql`
     fragment galleryFields on MarkdownRemarkFrontmatter {

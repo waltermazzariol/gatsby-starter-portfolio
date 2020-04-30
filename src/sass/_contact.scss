@@ -26,3 +26,27 @@
     max-height: 90px;
   }
 }
+
+//footer
+footer {
+  &.sub-footer {
+    background-color: #444;
+  }
+  .icon-logo {
+    max-height: 25px;
+  }
+}
+
+.footer {
+  &-bg {
+    // padding-bottom: calc(10rem - #{$navbar-height});
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+    background-size: cover;
+    margin: 0;
+    max-height: 100%;
+    @include media-breakpoint-up(lg) {
+      background-attachment: scroll !important;
+    }
+  }
+}

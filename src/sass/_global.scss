@@ -124,11 +124,11 @@ hr {
   &.divider {
     max-width: 3.25rem;
     border-width: 0.2rem;
-    border-color: $dark-gray;
+    border-color: $primary;
   }
   &.full {
     max-width: 90%;
-    color: $dark-gray;
+    color: $primary;
     border-width: 0.1rem;
   }
   &.light {
@@ -158,26 +158,6 @@ hr {
   }
 }
 
-// Read More Button
-.more {
-  border: none;
-  background: none;
-  &-text {
-    color: $dark-black;
-  }
-  img {
-    max-width: 40px;
-    display: block;
-    margin: 0 auto;
-  }
-  &:focus {
-    outline: none;
-  }
-}
-.rotate {
-  transform: rotate(180deg);
-}
-
 // Modal
 .modal-backdrop {
   background-color: #fff;
@@ -186,26 +166,4 @@ hr {
   opacity: 0.8;
 }
 
-//footer
-footer {
-  &.sub-footer {
-    background-color: #444;
-  }
-  .icon-logo {
-    max-height: 25px;
-  }
-}
 
-.footer {
-  &-bg {
-    // padding-bottom: calc(10rem - #{$navbar-height});
-    background-repeat: no-repeat;
-    background-attachment: scroll !important;
-    background-size: cover;
-    margin: 0;
-    max-height: 100%;
-    @include media-breakpoint-up(lg) {
-      background-attachment: scroll !important;
-    }
-  }
-}

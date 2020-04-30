@@ -2,14 +2,14 @@ import React from "react"
 import Fade from 'react-reveal/Fade'
 import Line from "./Line"
 
-function Title({ title, themeColor }) {
+function Title({ title}) {
 
     return (
-      <div className="container h-100">
+      <div className="container my-1 h-100">
         <div className="col-sm-12 my-auto">
           <Fade up>
             <h2 className="text-center">{title}</h2>
-            <Line themeColor={themeColor} />
+            <Line />
           </Fade>
         </div>
       </div>
@@ -17,8 +17,7 @@ function Title({ title, themeColor }) {
 }
 
 Title.defaultProps = {
-    title: "Read more",
-    themeColor: '#333'
+    title: "Title"
 }
 
 export default Title

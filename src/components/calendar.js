@@ -94,7 +94,7 @@ function Calendar(props) {
   return (
     <section id="calendar" className="py-5">
       <div className="container ">
-      <Title title={props.data.title} themeColor={props.themeColor} />
+      <Title title={props.data.title} />
         <div className="row">
           <Zoom>
             <div className="col-12 mb-3">

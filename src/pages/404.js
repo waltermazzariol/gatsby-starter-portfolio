@@ -7,7 +7,7 @@ import Hero from "../components/Hero/Hero"
 
 export const navData = graphql`  
 query {
-  music: markdownRemark {
+  markdownRemark {
       frontmatter {
         siteurl
         title
@@ -19,9 +19,9 @@ query {
   }
 `
 const NotFoundPage = (props) => (
-  <Layout nav={props.data.music.frontmatter.navegation}>
-    <SEO page={'404'} title={props.data.music.frontmatter.title} metas={props.data.music.frontmatter.metas} siteurl={props.data.music.frontmatter.siteurl} />
-    <Hero theme={props.data.music.frontmatter.theme} data={props.data.music.frontmatter.hero} />
+  <Layout nav={props.data.markdownRemark.frontmatter.navegation}>
+    <SEO page={'404'} title={props.data.markdownRemark.frontmatter.title} metas={props.data.markdownRemark.frontmatter.metas} siteurl={props.data.markdownRemark.frontmatter.siteurl} />
+    <Hero theme={props.data.markdownRemark.frontmatter.theme} data={props.data.markdownRemark.frontmatter.hero} />
     <div className="container my-5">
       <div className="row">
         <div className="col-12 text-center">
