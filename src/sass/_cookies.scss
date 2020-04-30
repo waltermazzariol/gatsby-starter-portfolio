@@ -1,0 +1,91 @@
+.cookies-custom {
+    display: none;
+    background-color: $white;
+    box-shadow: $text-shadow;
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    z-index: 999;
+    max-width: 500px;
+
+    &.active {
+        display: block;
+    }
+
+    span {
+        display: inline-block;
+        max-width: 350px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &-text {
+        font-size: 0.8rem;
+        color: $dark-gray;
+    }
+    &-accept {
+        display: inline-block;
+        vertical-align: top;
+        border: none;
+        background: white;
+        span{
+            color: $dark-gray;
+        }
+        .icon {
+            display: block;
+            width: 25px;
+            height: 25px;
+            margin: 0.5rem auto 0 auto;
+            height: 1em;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            color: $gray-600;
+            text-decoration: underline;
+            span {
+                color: $gray-600;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+        bottom: 0;
+        background-color: $white;
+        font-size: 0.8571rem;
+        padding: 12px 20px;
+        width: 100%;
+        
+        &.active{
+            display: block;
+        }
+        
+        span {
+            width: 80%;
+            color: $dark-black;
+        }
+
+        button {
+            color: $dark-black;
+            margin-top: 7px;
+            float: right;
+            margin-right: 7px;
+            border: none;
+        }
+        &-text {
+            font-size: 1rem;
+            color: $dark-gray;
+        }
+        &-accept {
+            background: white;
+            .icon {
+                width: 30px;
+                height: 30px;            
+            }
+            
+        }
+      }
+}

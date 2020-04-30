@@ -1,0 +1,126 @@
+#form{
+    background-color: $gray-200;
+    padding: 1rem 0;
+    .form{
+     &-title{
+         font-family: $headings-font-family;
+         color: $dark-black;
+     }
+    }
+}
+
+input{
+    border: none;
+    &:focus{
+      outline: none;
+  
+    }
+  }
+    .wrap-input2 {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #adadad;
+        margin-bottom: 37px;
+    }
+    
+    .input2 {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        color: #555555;
+        line-height: 1.2;
+        &-message{
+            margin-top: -52px;
+            color: $dark-gray;
+        }
+    }
+    
+    .focus-input2 {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+        
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+        
+            background: black;
+        }
+    
+        &:after {
+            content: attr(data-placeholder);
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0;
+        
+            font-size: 13px;
+            color: #999999;
+            line-height: 1.2;
+        
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+    }
+    
+    /*---------------------------------------------*/
+    input.input2 {
+        height: 45px;
+        padding-left: 1rem;
+    }
+    
+    input.input2 + .focus-input2::after {
+        top: 16px;
+        left: 1rem;
+    }
+    
+    textarea.input2 {
+        min-height: 115px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    
+    textarea.input2 + .focus-input2::after {
+        top: 16px;
+        left: 1rem;
+        display: none;
+    }
+    
+    .input2:focus + .focus-input2::after {
+        top: -13px;
+        left: 1rem;
+        display: none;
+    }
+    
+    .input2:focus + .focus-input2::before {
+        width: 100%;
+    }
+    
+    .has-val.input2 + .focus-input2::after {
+        top: -13px;
+        display: none;
+    }
+    
+    .has-val.input2 + .focus-input2::before {
+        width: 100%;
+        display: none;
+    }
+    
+

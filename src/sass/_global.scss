@@ -1,0 +1,211 @@
+// Global styling for this template
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+}
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 3.3125rem;
+  line-height: 1.15em;
+}
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+}
+h3 {
+  font-size: 1.5625rem;
+  line-height: 1.4em;
+}
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5em;
+}
+h5 {
+  font-size: 1.0625rem;
+  line-height: 1.55em;
+}
+h6 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+p {
+  font-size: 1rem;
+  margin: 0 0 10px;
+  color: $dark-gray;
+  font-family: $font-family-base;
+}
+body {
+  background-color: #ffffff;
+  color: $dark-black;
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+// Prevent highlight on mobile
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  &:focus {
+    outline: 0;
+  }
+}
+
+a {
+  color: $dark-gray;
+  text-decoration: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: darken($dark-gray, 5%);
+    text-decoration: none;
+  }
+}
+
+label {
+  font-size: 14px;
+  line-height: 1.42857;
+  color: $light-gray;
+  font-weight: 400;
+}
+small {
+  font-size: 75%;
+  color: #777;
+  font-weight: 400;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+form {
+  margin-bottom: 1.125rem;
+}
+
+// Custom horizontal rules
+hr {
+  &.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: $dark-gray;
+  }
+  &.full {
+    max-width: 90%;
+    color: $dark-gray;
+    border-width: 0.1rem;
+  }
+  &.light {
+    border-color: $white;
+  }
+}
+
+// Button restyling
+.btn {
+  font-family: $font-family-sans-serif;
+  &-xl {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin: 2rem 0;
+  }
+  &-dark {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+// Read More Button
+.more {
+  border: none;
+  background: none;
+  &-text {
+    color: $dark-black;
+  }
+  img {
+    max-width: 40px;
+    display: block;
+    margin: 0 auto;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+// Modal
+.modal-backdrop {
+  background-color: #fff;
+}
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
+//footer
+footer {
+  &.sub-footer {
+    background-color: #444;
+  }
+  .icon-logo {
+    max-height: 25px;
+  }
+}
+
+.footer {
+  &-bg {
+    // padding-bottom: calc(10rem - #{$navbar-height});
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+    background-size: cover;
+    margin: 0;
+    max-height: 100%;
+    @include media-breakpoint-up(lg) {
+      background-attachment: scroll !important;
+    }
+  }
+}

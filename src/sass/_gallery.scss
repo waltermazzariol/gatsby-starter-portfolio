@@ -1,0 +1,36 @@
+#gallery{
+
+	.hide{
+	  display: none;
+	}
+	.image {
+		position:relative;
+		
+	img{
+		background-size: cover;
+		height: 100%;
+		overflow:hidden;
+
+	}
+	  }
+	  
+
+	.grid {
+		width: 50%;
+  		height: 0;
+		padding-bottom: 50%;
+		overflow: hidden;
+		a{
+			display:block;
+			max-width: 100%;
+			height: 500px;
+		}
+		@include media-breakpoint-up(md) {
+			width: 25%;
+			height: 0;
+			padding-bottom: 25%;
+			overflow: hidden;
+		}
+		
+	 }
+  }

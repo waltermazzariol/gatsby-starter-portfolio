@@ -1,0 +1,28 @@
+#contact {
+  .text {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    a {
+      color: #d7d7d7;
+    }
+  }
+  .container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .map {
+    max-width: 400px;
+    margin: 0.5rem auto;
+  }
+  .social-contact {
+    margin-top: 2rem;
+
+    a i {
+      margin: 1rem;      
+    }
+  }
+  .instagram-img img {
+    max-height: 90px;
+  }
+}
