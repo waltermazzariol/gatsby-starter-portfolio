@@ -9,7 +9,6 @@ import PortfolioItem from "../components/Portfolio/PortfolioItem"
 import GalleryItem from "../components/Gallery/GalleryItem.js"
 
 import Title from "../components/Common/Title"
-import Grid from "../components/Common/Grid"
 import List from "../components/Common/List"
 import Section from "../components/Common/Section"
 import TestimonialItem from "../components/TestimonialItem.js"
@@ -17,6 +16,7 @@ import Services from "../components/Services.js"
 import CookiesConsent from "../components/Cookies.js"
 import Contact from "../components/Contact.js"
 
+import Col from 'react-bootstrap/Col'
 import Fade from 'react-reveal/Fade'
 import Img from 'gatsby-image'
 
@@ -44,24 +44,24 @@ function IndexPage(props) {
       <Section anchor={'about'} className={'about'} >
         <Title title={contentJson.about.title} />
 
-        <Grid md="12" lg="5" align="text-center">
+        <Col md="12" lg="5" align="text-center">
           <Fade>
             <Img className="bio-image" fluid={contentJson.about.image.childImageSharp.fluid} alt="profile" />
           </Fade>
-        </Grid>
-        <Grid md="12" lg="7">
+        </Col>
+        <Col md="12" lg="7">
           <Fade>
             <p className="mb-4"> {contentJson.about.text} </p>
             <div className="row">
-              <Grid md="6" lg="6">
+              <Col md="6" lg="6">
                 <List data={contentJson.about.list.slice(0, contentJson.about.list.length / 2)} />
-              </Grid>
-              <Grid md="6" lg="6">
+              </Col>
+              <Col md="6" lg="6">
                 <List data={contentJson.about.list.slice(contentJson.about.list.length / 2, contentJson.about.list.length)} />
-              </Grid>
+              </Col>
             </div>
           </Fade>
-        </Grid>
+        </Col>
       </Section>
 
       <Section anchor={'reviews'} className={'testimonial'} >
