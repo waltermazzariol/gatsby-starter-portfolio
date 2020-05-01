@@ -13,7 +13,7 @@ function Testimonial({ data }) {
           <Fade key={index} left>
             <li>
               <div className="row justify-content-center">
-                <div className="col-md-2 col-sm-12 mb-5">
+                <div className="col-md-2 col-sm-12">
                   <div className="image">
                     <img src={key.image.childImageSharp.fluid.src} className="mx-auto img-fluid" alt="testimonio" />
                   </div>

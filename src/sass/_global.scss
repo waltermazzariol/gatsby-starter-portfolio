@@ -158,6 +158,22 @@ hr {
   }
 }
 
+.box-image{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+img.fluido{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+
+}
+
 .container-fluid{
   padding: 0; 
 }

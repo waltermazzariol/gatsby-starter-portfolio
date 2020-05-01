@@ -2,37 +2,47 @@
     "general": {
         "path": "/",
         "siteurl": "/",
-        "seo-description": "Product owner y desarrollador Web con más 5 años",
+        "seo-description": "React Developer - Est 1989",
         "ua": "",
-        "lang": "es"
+        "lang": "en"
     },
     "navigation": {
-        "title": "Luna Lea",
+        "title": "John Doe",
         "logo-active": false,
         "logo-url": "../images/assets/logo-wansite.svg",
         "cta-button": "whatsapp",
         "cta-link": "https://wa.me/555555555",
         "menu": [
-            {"nav": "Bio",
-            "link" : "#about"},
-          {"nav": "Instagram",
-            "link" : "#gallery"},
-          {"nav": "Portafolio",
-            "link" : "#portfolio"},
-          {"nav": "Recomendaciones",
-            "link" : "#testimonial"},
-          {"nav": "Contacto",
-            "link" : "#contact"}
+            {
+                "nav": "Biography",
+                "link": "#about"
+            },
+            {
+                "nav": "Some Pictures",
+                "link": "#gallery"
+            },
+            {
+                "nav": "Portfolio",
+                "link": "#portfolio"
+            },
+            {
+                "nav": "Reviews",
+                "link": "#reviews"
+            },
+            {
+                "nav": "Contact",
+                "link": "#contact"
+            }
         ]
     },
     "hero": {
-        "title": "Hey, I´m Luna Lea",
-        "subtitle": "Designer and grapher",
-        "image": "./images/hero-2.jpg"
+        "title": "Hey, I´m Joh Doe",
+        "subtitle": "React Developer - Est 1989 - Barcelona",
+        "image": "./images/hero.jpg"
     },
     "gallery": {
         "id": 2,
-        "title": "Galería",
+        "title": "Some Pictures",
         "gallery": [
             {
                 "image": "./images/gallery/1.jpg",
@@ -57,67 +67,53 @@
         "title": "Portfolio",
         "projects": [
             {
-                "name": "Miami",
-                "type": "wynwood",
+                "name": "Personal Trainer",
+                "type": "React - Frontend",
                 "link": "https://google.com",
                 "image": "./images/portfolio/1.jpg",
                 "alt": "imagen 1"
             },
             {
-                "name": "Portugal",
-                "type": "Porto",
+                "name": "Best Burger in Town",
+                "type": "Delivery System",
                 "link": "https://google.com",
                 "image": "./images/portfolio/2.jpg",
                 "alt": "imagen 1"
             },
             {
-                "name": "Portugal",
-                "type": "Porto",
+                "name": "Tattoo Shop",
+                "type": "Appointment System",
                 "link": "https://google.com",
                 "image": "./images/portfolio/3.jpg",
-                "alt": "imagen 1"
-            },
-            {
-                "name": "Portugal",
-                "type": "Porto",
-                "link": "https://google.com",
-                "image": "./images/portfolio/4.jpg",
-                "alt": "imagen 1"
-            },
-            {
-                "name": "Portugal",
-                "type": "Porto",
-                "link": "https://google.com",
-                "image": "./images/portfolio/5.jpg",
-                "alt": "imagen 1"
-            },
-            {
-                "name": "Portugal",
-                "type": "Porto",
-                "link": "https://google.com",
-                "image": "./images/portfolio/6.jpg",
                 "alt": "imagen 1"
             }
         ]
     },
     "about": {
         "id": 3,
-        "title": "Sobre nosotros",
+        "title": "Biography",
         "text": "Spain-based street artist, political activist, and film director, active since the 1990s. His satirical street art and subversive epigrams combine dark humour with graffiti executed in a distinctive stenciling technique. His works of political and social commentary have been featured on streets, walls, and bridges of cities throughout the world. Banksy's work grew out of the Bristol underground scene, which involved collaborations between artists and musicians.",
         "list": [
             {
-                "text": "street"
-            },{
-                "text": "wedding"
-            },{
-                "text": "profile"
-            },{
-                "text": "events"
-            },{
-                "text": "product"
+                "text": "React"
+            },
+            {
+                "text": "Angular"
+            },
+            {
+                "text": "HTML5"
+            },
+            {
+                "text": "PHP"
+            },
+            {
+                "text": "AWS"
+            },
+            {
+                "text": "CSS3"
             }
         ],
-        "image": "./images/bio.jpg"
+        "image": "./images/profile.jpg"
     },
     "services": [
         {
@@ -126,17 +122,17 @@
             "icon": "../images/assets/process_notebook.svg"
         },
         {
-            "title": "Designer",
+            "title": "Fontend",
             "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
             "icon": "../images/assets/process_stack.svg"
         },
         {
-            "title": "Designer",
+            "title": "Backend",
             "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
             "icon": "../images/assets/process_arrow.svg"
         },
         {
-            "title": "Designer",
+            "title": "Architect",
             "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
             "icon": "../images/assets/process_mixer.svg"
         }
@@ -145,14 +141,14 @@
         "title": "Reviews",
         "person": [
             {
-                "name": "Carlos Luis",
-                "position": "PO",
+                "name": "Andrea Ruiz",
+                "position": "Tatto Store",
                 "source": "Linkedin",
                 "image": "./images/testimonials/1.jpg",
                 "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
-                "name": "Carlos Andres",
+                "name": "Carlos Andrés",
                 "position": "Designer",
                 "source": "Linkedin",
                 "image": "./images/testimonials/2.jpg",
@@ -162,19 +158,19 @@
     },
     "contact": {
         "phone": "+346666666",
-        "email": "LunaLea@gmail.com",
+        "email": "johndoe@gmail.com",
         "address": "Barcelona, Spain",
         "socialmedia": [
             {
-                "link": "https://instagram.com/lunalea",
+                "link": "https://instagram.com/johndoe",
                 "name": "instagram"
             },
             {
-                "link": "https://twitter.com/lunalea",
+                "link": "https://twitter.com/johndoe",
                 "name": "twitter"
             }
         ],
-        "image": "./images/bg-footer.jpg"
+        "image": "./images/footer.jpg"
     },
     "tags": {
         "viewmore": "Ver más",

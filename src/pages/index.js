@@ -64,7 +64,7 @@ function IndexPage(props) {
           </Grid>
       </Section>
 
-      <Section anchor={'testimonial'} className={'testimonial'} >
+      <Section anchor={'reviews'} className={'testimonial'} >
         <Title title={contentJson.team.title} />
           <TestimonialItem data={contentJson.team.person} />
       </Section>
