@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Navbar from "./Navbar"
 import "./layout.scss"
-import logo from "../images/assets/guarapo_logo_white.svg"
+import logo from "../images/assets/logo-wansite.svg"
 
 
 const getScrollNode = (element) => {
@@ -60,11 +60,11 @@ export default class Layout extends React.Component {
         className={className}
         ref={this.siteContainer}
         id="page-top">
-        <Navbar nav={this.props.nav} themeColor={this.props.themeColor}/>
+        <Navbar nav={this.props.nav} />
         <main>{this.props.children}</main>
-        <footer className="bg-dark py-3">
-        <div className="container">
-            <div className="small text-center text-muted">Copyright &copy; 2020 - <a href="https://guarapomedia.com" target="_blank" rel="noopener noreferrer"><img src={logo} className="icon icon-logo" alt="Guarapo Media"/></a></div>
+        <footer className="footer">
+          <div className="container">
+            <div className="footer-text">Copyright &copy; 2020 - <a href="https://guarapomedia.com" target="_blank" rel="noopener noreferrer"><img src={logo} className="icon icon-logo" alt="Guarapo Media" /></a></div>
           </div>
         </footer>
       </div>

@@ -41,11 +41,11 @@ class CookiesConsent extends Component {
             <section id="cookies" className={`cookies-custom ${accepted ? "": "active"}`} key={key}>
               <div className="container">
                 <div className="row">
-                  <div className="col-9 cookies-custom-text my-auto">{this.props.data.message}</div>
+                  <div className="col-9 cookies-custom-text my-auto">{this.props.data.cookie_message}</div>
                   <div className="col-3 cookies-custom-icon">
                   <button onClick={this.handleClick} className="cookies-custom-accept">
                       <img src={CookieIcon} className="icon icon-cookie" alt="cookie icon"/>
-                      <span>{this.props.data.button}</span>
+                      <span>{this.props.data.cookie_accept}</span>
                   </button>
                   </div>
                 </div>

@@ -11,14 +11,17 @@ import {Helmet} from "react-helmet"
 import ReactGA from 'react-ga'
 
 
-function SEO({page, description, lang, meta, title, metas, siteurl }) {
-  
+function SEO({page, description, lang, meta, title, metas, image }) {
+  console.log(metas)
   const trackingId = metas.ua;
-  ReactGA.initialize(trackingId);
-  ReactGA.pageview(`/${page}`);
+  if(trackingId !== undefined){
+    ReactGA.initialize(trackingId);
+    ReactGA.pageview(`/${page}`);
+  }
+  
   
   const metaDescription = description || metas.description
-  const imageURL = siteurl+metas.image.publicURL
+  const imageURL = metas.siteurl+image.src
   
   return (
     <Helmet
@@ -50,7 +53,7 @@ function SEO({page, description, lang, meta, title, metas, siteurl }) {
         },
         {
           property: `og:url`,
-          content: siteurl,
+          content: metas.siteurl,
         },
         {
           name: `twitter:card`,
@@ -58,7 +61,7 @@ function SEO({page, description, lang, meta, title, metas, siteurl }) {
         },
         {
           name: `twitter:image`,
-          content: metas.image.publicURL,
+          content: imageURL,
         },
         {
           name: `twitter:creator`,

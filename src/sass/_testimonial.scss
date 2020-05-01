@@ -1,11 +1,11 @@
-#testimonial {
-  ul{
-    padding-left: 0;
-  li {
-    list-style: none;
-
     .testimonial {
-      margin-bottom: 3rem;
+
+      ul{
+        padding-left: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: 3rem;
 
       &-name {
         color: $dark-black;
@@ -41,4 +41,4 @@
       position: absolute;
     }
   }
-}
+

@@ -1,51 +1,60 @@
 // Styling for the masthead
-header.masthead {
-	padding-top: 10rem;
-	background-repeat: no-repeat;
-	background-attachment: scroll!important;
-	background-size: cover;
-	overflow: hidden;
+.hero {
+	background-attachment: scroll !important;
 	margin-bottom: 1rem;
-	.arrow img{
-		max-width: 45px;
+	&-wrapper {
+		min-height: 80vh;
+		text-align: center;
+		padding-top: 60px;
 	}
-	h1 {
-		font-size: 2.5rem;
+	&-arrow {
+		text-align: center;
+		padding-bottom: 3rem;
+		img {
+			max-width: 35px;
+		}
+	}
+	h1.hero-title {
+		color: white;
+		font-size: 2rem;
 		font-weight: 700;
+		text-align: center;
 	}
-	p a i{
+	.hero-subtitle {
 		color: $light-gray;
 		margin-left: 0.8rem;
-		font-size: 1.5rem;
+		font-size: 1rem;
+		text-align: center;
 	}
-	@include media-breakpoint-up(lg) {
-		background-attachment: scroll!important;
-		height: 550px;
-		min-height: 40rem;
-		padding-top: $navbar-height;
-		padding-bottom: 0;
-		p {
+
+	@include media-breakpoint-up(md) {
+		background-attachment: scroll !important;
+
+		h1.hero-title {
+			font-size: 4.5rem;
+		}
+		.hero-subtitle {
 			font-size: 1.15rem;
 		}
-		h1.portfolio {
-			margin-top: 4rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		background-attachment: scroll !important;
+		
+		h1.hero-title {
 			font-size: 4.5rem;
+			text-align: center;
 		}
-		h1.music {
-			font-size: 4.5rem;
-			float: left;
+		.hero-subtitle {
+			font-size: 1.15rem;
 		}
 	}
 	@include media-breakpoint-up(xl) {
-		background-attachment: fixed!important;
-		h1.portfolio {
+		background-attachment: fixed !important;
+		
+		h1.hero-title {
 			font-size: 5rem;
-			max-width: 80%;
-			margin: 5rem auto 0;
-		}
-		h1.music {
-			font-size: 5.5rem;
-			float: left;
+			max-width: 100%;
 		}
 	}
 }

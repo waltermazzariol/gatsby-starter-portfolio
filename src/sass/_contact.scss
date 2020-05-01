@@ -1,4 +1,4 @@
-#contact {
+.contact {
   .text {
     margin-bottom: 0.5rem;
     color: #fff;
@@ -19,25 +19,16 @@
     margin-top: 2rem;
 
     a i {
-      margin: 1rem;      
+      margin: 1rem; 
+      color: white;
+      &:hover{
+        color: $primary;
+      }     
     }
   }
   .instagram-img img {
     max-height: 90px;
   }
-}
-
-//footer
-footer {
-  &.sub-footer {
-    background-color: #444;
-  }
-  .icon-logo {
-    max-height: 25px;
-  }
-}
-
-.footer {
   &-bg {
     // padding-bottom: calc(10rem - #{$navbar-height});
     background-repeat: no-repeat;
@@ -45,8 +36,24 @@ footer {
     background-size: cover;
     margin: 0;
     max-height: 100%;
+    max-width: 100%;
     @include media-breakpoint-up(lg) {
       background-attachment: scroll !important;
     }
+  }
+}
+
+//footer
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  &-text{
+    color: #7b7b7b; 
+  }
+  .icon-logo {
+    max-height: 20px;
   }
 }

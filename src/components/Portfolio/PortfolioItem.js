@@ -2,11 +2,11 @@ import React from "react"
 import Img from "gatsby-image"
 import Zoom from 'react-reveal/Zoom';
 
-
 function PortfolioItem(props) {
 
     return (
-        <div className="row">{props.data.map((key, index) =>
+        <>
+            {props.data.map((key, index) =>
             <Zoom key={index}>
                 <div className="col-lg-4 col-sm-6 portfolio">
                     {key.image !== undefined ?
@@ -33,7 +33,7 @@ function PortfolioItem(props) {
                 </div>
             </Zoom>
         )}
-        </div>
+        </>
     )
 }
 

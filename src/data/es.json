@@ -1,0 +1,188 @@
+{
+    "general": {
+        "path": "/",
+        "siteurl": "/",
+        "seo-description": "Product owner y desarrollador Web con más 5 años",
+        "ua": "",
+        "lang": "es"
+    },
+    "navigation": {
+        "title": "Luna Lea",
+        "logo-active": false,
+        "logo-url": "../images/assets/logo-wansite.svg",
+        "cta-button": "whatsapp",
+        "cta-link": "https://wa.me/555555555",
+        "menu": [
+            {"nav": "Bio",
+            "link" : "#about"},
+          {"nav": "Instagram",
+            "link" : "#gallery"},
+          {"nav": "Portafolio",
+            "link" : "#portfolio"},
+          {"nav": "Recomendaciones",
+            "link" : "#testimonial"},
+          {"nav": "Contacto",
+            "link" : "#contact"}
+        ]
+    },
+    "hero": {
+        "title": "Hey, I´m Luna Lea",
+        "subtitle": "Designer and grapher",
+        "image": "./images/hero-2.jpg"
+    },
+    "gallery": {
+        "id": 2,
+        "title": "Galería",
+        "gallery": [
+            {
+                "image": "./images/gallery/1.jpg",
+                "alt": "imagen 1"
+            },
+            {
+                "image": "./images/gallery/2.jpg",
+                "alt": "imagen 1"
+            },
+            {
+                "image": "./images/gallery/3.jpg",
+                "alt": "imagen 1"
+            },
+            {
+                "image": "./images/gallery/4.jpg",
+                "alt": "imagen 1"
+            }
+        ]
+    },
+    "portfolio": {
+        "id": 1,
+        "title": "Portfolio",
+        "projects": [
+            {
+                "name": "Miami",
+                "type": "wynwood",
+                "link": "https://google.com",
+                "image": "./images/portfolio/1.jpg",
+                "alt": "imagen 1"
+            },
+            {
+                "name": "Portugal",
+                "type": "Porto",
+                "link": "https://google.com",
+                "image": "./images/portfolio/2.jpg",
+                "alt": "imagen 1"
+            },
+            {
+                "name": "Portugal",
+                "type": "Porto",
+                "link": "https://google.com",
+                "image": "./images/portfolio/3.jpg",
+                "alt": "imagen 1"
+            },
+            {
+                "name": "Portugal",
+                "type": "Porto",
+                "link": "https://google.com",
+                "image": "./images/portfolio/4.jpg",
+                "alt": "imagen 1"
+            },
+            {
+                "name": "Portugal",
+                "type": "Porto",
+                "link": "https://google.com",
+                "image": "./images/portfolio/5.jpg",
+                "alt": "imagen 1"
+            },
+            {
+                "name": "Portugal",
+                "type": "Porto",
+                "link": "https://google.com",
+                "image": "./images/portfolio/6.jpg",
+                "alt": "imagen 1"
+            }
+        ]
+    },
+    "about": {
+        "id": 3,
+        "title": "Sobre nosotros",
+        "text": "Spain-based street artist, political activist, and film director, active since the 1990s. His satirical street art and subversive epigrams combine dark humour with graffiti executed in a distinctive stenciling technique. His works of political and social commentary have been featured on streets, walls, and bridges of cities throughout the world. Banksy's work grew out of the Bristol underground scene, which involved collaborations between artists and musicians.",
+        "list": [
+            {
+                "text": "street"
+            },{
+                "text": "wedding"
+            },{
+                "text": "profile"
+            },{
+                "text": "events"
+            },{
+                "text": "product"
+            }
+        ],
+        "image": "./images/bio.jpg"
+    },
+    "services": [
+        {
+            "title": "Designer",
+            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
+            "icon": "../images/assets/process_notebook.svg"
+        },
+        {
+            "title": "Designer",
+            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
+            "icon": "../images/assets/process_stack.svg"
+        },
+        {
+            "title": "Designer",
+            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
+            "icon": "../images/assets/process_arrow.svg"
+        },
+        {
+            "title": "Designer",
+            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
+            "icon": "../images/assets/process_mixer.svg"
+        }
+    ],
+    "team": {
+        "title": "Reviews",
+        "person": [
+            {
+                "name": "Carlos Luis",
+                "position": "PO",
+                "source": "Linkedin",
+                "image": "./images/testimonials/1.jpg",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+            {
+                "name": "Carlos Andres",
+                "position": "Designer",
+                "source": "Linkedin",
+                "image": "./images/testimonials/2.jpg",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+        ]
+    },
+    "contact": {
+        "phone": "+346666666",
+        "email": "LunaLea@gmail.com",
+        "address": "Barcelona, Spain",
+        "socialmedia": [
+            {
+                "link": "https://instagram.com/lunalea",
+                "name": "instagram"
+            },
+            {
+                "link": "https://twitter.com/lunalea",
+                "name": "twitter"
+            }
+        ],
+        "image": "./images/bg-footer.jpg"
+    },
+    "tags": {
+        "viewmore": "Ver más",
+        "viewless": "Ver menos",
+        "cookie-message": "Usamos cookies propias y de terceros para mejorar tu experiencia como usuario.",
+        "cookie-accept": "Aceptar",
+        "event": "Título",
+        "date": "Fecha",
+        "location": "Locación"
+    }
+}

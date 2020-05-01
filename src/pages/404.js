@@ -2,26 +2,34 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import Hero from "../components/Hero/Hero"
 
 export const navData = graphql`  
 query {
-  markdownRemark {
-      frontmatter {
-        siteurl
-        title
-        ...metasFields
-        ...heroFields
-        ...navFields
+  dataJson {
+    general {
+      path
+      siteurl
+      seo_description
+      ua
+      lang
+    }
+    hero {
+      image {
+          publicURL
       }
+      subtitle
+      title
+    }
     }
   }
 `
+
 const NotFoundPage = (props) => (
-  <Layout nav={props.data.markdownRemark.frontmatter.navegation}>
-    <SEO page={'404'} title={props.data.markdownRemark.frontmatter.title} metas={props.data.markdownRemark.frontmatter.metas} siteurl={props.data.markdownRemark.frontmatter.siteurl} />
-    <Hero theme={props.data.markdownRemark.frontmatter.theme} data={props.data.markdownRemark.frontmatter.hero} />
+  <Layout nav={props.data.contentJson.navigation} >
+  <Seo page={'inicio'} title={props.data.contentJson.navigation.title} metas={props.data.contentJson.general} image={props.data.contentJson.about.image.childImageSharp.fluid} />
+  <Hero data={props.data.contentJson.hero} />
     <div className="container my-5">
       <div className="row">
         <div className="col-12 text-center">

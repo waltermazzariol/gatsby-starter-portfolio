@@ -1,18 +1,21 @@
 import React from "react"
-import Fade from 'react-reveal/Fade'
+
+// core component
 import Line from "./Line"
+
+// Library components
+import Fade from 'react-reveal/Fade'
+import Col from 'react-bootstrap/Col'
 
 function Title({ title}) {
 
     return (
-      <div className="container my-1 h-100">
-        <div className="col-sm-12 my-auto">
+        <Col lg={12} className="py-3">
           <Fade up>
             <h2 className="text-center">{title}</h2>
             <Line />
           </Fade>
-        </div>
-      </div>
+        </Col>
     )
 }
 
