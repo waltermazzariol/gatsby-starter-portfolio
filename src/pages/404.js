@@ -8,6 +8,15 @@ import Hero from "../components/Hero/Hero"
 export const navData = graphql`  
 query {
   dataJson {
+    about {
+      image {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
     general {
       path
       siteurl
@@ -22,14 +31,26 @@ query {
       subtitle
       title
     }
+    navigation {
+      cta_button
+      cta_link
+      logo_active
+      logo_url{
+        publicURL
+      }
+      title
+      menu{
+        nav
+        link
+      }
     }
   }
-`
+}`
 
 const NotFoundPage = (props) => (
-  <Layout nav={props.data.contentJson.navigation} >
-  <Seo page={'inicio'} title={props.data.contentJson.navigation.title} metas={props.data.contentJson.general} image={props.data.contentJson.about.image.childImageSharp.fluid} />
-  <Hero data={props.data.contentJson.hero} />
+  <Layout nav={props.data.dataJson.navigation} >
+    <Seo page={'inicio'} title={props.data.dataJson.navigation.title} metas={props.data.dataJson.general} image={props.data.dataJson.about.image.childImageSharp.fluid} />
+    <Hero data={props.data.dataJson.hero} />
     <div className="container my-5">
       <div className="row">
         <div className="col-12 text-center">

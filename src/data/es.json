@@ -92,7 +92,7 @@
     "about": {
         "id": 3,
         "title": "Biography",
-        "text": "Spain-based street artist, political activist, and film director, active since the 1990s. His satirical street art and subversive epigrams combine dark humour with graffiti executed in a distinctive stenciling technique. His works of political and social commentary have been featured on streets, walls, and bridges of cities throughout the world. Banksy's work grew out of the Bristol underground scene, which involved collaborations between artists and musicians.",
+        "text": "Spain-based frontend/backennd developer, political activist, and film director, active since the 2000s. His satirical designs art and subversive epigrams combine dark humour with graffiti executed in a distinctive stenciling technique. His works of political and social commentary have been featured on streets, walls, and bridges of cities throughout the world. Banksy's work grew out of the Bristol underground scene, which involved collaborations between artists and musicians.",
         "list": [
             {
                 "text": "React"
@@ -175,8 +175,8 @@
     "tags": {
         "viewmore": "Ver más",
         "viewless": "Ver menos",
-        "cookie-message": "Usamos cookies propias y de terceros para mejorar tu experiencia como usuario.",
-        "cookie-accept": "Aceptar",
+        "cookie-message": "We use our own and third party cookies to improve your user experience.",
+        "cookie-accept": "Accept",
         "event": "Título",
         "date": "Fecha",
         "location": "Locación"

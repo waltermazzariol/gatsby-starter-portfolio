@@ -43,38 +43,38 @@ function IndexPage(props) {
 
       <Section anchor={'about'} className={'about'} >
         <Title title={contentJson.about.title} />
-        
-          <Grid md="12" lg="5" align="text-center">
-            <Fade>
-              <Img className="bio-image" fluid={contentJson.about.image.childImageSharp.fluid} alt="profile" />
-            </Fade>
-          </Grid>
-          <Grid md="12" lg="7">
-            <Fade>
-              <p className="mb-4"> {contentJson.about.text} </p>
-              <div className="row">
-                <Grid md="6" lg="6">
-                  <List data={contentJson.about.list.slice(0, contentJson.about.list.length / 2)} />
-                </Grid>
-                <Grid md="6" lg="6">
-                  <List data={contentJson.about.list.slice(contentJson.about.list.length / 2, contentJson.about.list.length)} />
-                </Grid>
-              </div>
-            </Fade>
-          </Grid>
+
+        <Grid md="12" lg="5" align="text-center">
+          <Fade>
+            <Img className="bio-image" fluid={contentJson.about.image.childImageSharp.fluid} alt="profile" />
+          </Fade>
+        </Grid>
+        <Grid md="12" lg="7">
+          <Fade>
+            <p className="mb-4"> {contentJson.about.text} </p>
+            <div className="row">
+              <Grid md="6" lg="6">
+                <List data={contentJson.about.list.slice(0, contentJson.about.list.length / 2)} />
+              </Grid>
+              <Grid md="6" lg="6">
+                <List data={contentJson.about.list.slice(contentJson.about.list.length / 2, contentJson.about.list.length)} />
+              </Grid>
+            </div>
+          </Fade>
+        </Grid>
       </Section>
 
       <Section anchor={'reviews'} className={'testimonial'} >
         <Title title={contentJson.team.title} />
-          <TestimonialItem data={contentJson.team.person} />
+        <TestimonialItem data={contentJson.team.person} />
       </Section>
 
       <Section anchor={'services'} className={'services my-4'} fluid={true} noGutters={true}>
-          <Services data={contentJson.services} />
+        <Services data={contentJson.services} />
       </Section>
 
       <Section anchor={'contact'} className={'contact'} fluid={true} noGutters={true}>
-          <Contact data={contentJson.contact} />
+        <Contact data={contentJson.contact} />
       </Section>
 
       <CookiesProvider>
