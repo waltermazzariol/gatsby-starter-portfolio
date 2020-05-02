@@ -51,7 +51,7 @@ function IndexPage(props) {
         </Col>
         <Col md="12" lg="7">
           <Fade>
-            <p className="mb-4"> {contentJson.about.text} </p>
+            <p className="mb-4"> {contentJson.about.text.split ('\n').map ((item, i) => <p key={i}>{item}</p>)}</p>
             <div className="row">
               <Col md="6" lg="6">
                 <List data={contentJson.about.list.slice(0, contentJson.about.list.length / 2)} />
