@@ -64,7 +64,7 @@
           display: inline-block;
           position: relative;
           &:hover,
-          &.active {
+          &:active {
             color: $navbar-text-color !important;
             opacity: 1;
             background-color: $navbar-text-color-hover;

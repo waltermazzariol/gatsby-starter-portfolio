@@ -26,7 +26,7 @@ Gatsby implementation of [Wansite Starter](https://modest-villani-fa0160.netlify
     Use the Gatsby CLI to create a new site, specifying the starter project.
     
     ```sh
-    gatsby new project-name https://github.com/waltermazzariol/wansite-starter
+    gatsby new project-name https://github.com/waltermazzariol/starter-wansite
     ```
 
 2.  **Start your project.**

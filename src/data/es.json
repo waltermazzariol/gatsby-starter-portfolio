@@ -14,16 +14,16 @@
         "cta-link": "https://wa.me/555555555",
         "menu": [
             {
-                "nav": "Biography",
-                "link": "#about"
+                "nav": "Portfolio",
+                "link": "#portfolio"
             },
             {
                 "nav": "Some Pictures",
                 "link": "#gallery"
             },
             {
-                "nav": "Portfolio",
-                "link": "#portfolio"
+                "nav": "Biography",
+                "link": "#about"
             },
             {
                 "nav": "Reviews",
