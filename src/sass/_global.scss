@@ -16,8 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: 300;
+  font-family: $font-family-base;
   line-height: 1.5em;
 }
 h1,
@@ -31,14 +30,14 @@ h6 {
 h1,
 h2,
 h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 h4,
 h5,
 h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 h1 {
   font-size: 3.3125rem;
@@ -68,12 +67,12 @@ h6 {
 p {
   font-size: 1rem;
   margin: 0 0 10px;
-  color: $dark-gray;
+  color: $font-text-color;
   font-family: $font-family-base;
 }
 body {
-  background-color: #ffffff;
-  color: $dark-black;
+  background-color: $body-background;
+  color: $font-text-color;
   margin: 0;
   font-size: 1rem;
   text-align: left;
@@ -90,12 +89,12 @@ body {
 }
 
 a {
-  color: $dark-gray;
+  color: $font-text-color;
   text-decoration: none;
   background-color: transparent;
   &:hover,
   &:focus {
-    color: darken($dark-gray, 5%);
+    color: darken($font-text-color, 10%);
     text-decoration: none;
   }
 }
@@ -124,11 +123,11 @@ hr {
   &.divider {
     max-width: 3.25rem;
     border-width: 0.2rem;
-    border-color: $primary;
+    border-color: $divider-color;
   }
   &.full {
     max-width: 90%;
-    color: $primary;
+    color: $divider-color;
     border-width: 0.1rem;
   }
   &.light {
@@ -138,7 +137,7 @@ hr {
 
 // Button restyling
 .btn {
-  font-family: $font-family-sans-serif;
+  font-family: $headings-font-family;
   &-xl {
     padding: 0.7rem 1.5rem;
     font-size: 0.85rem;
@@ -171,7 +170,6 @@ img.fluido{
   height: 100%;
   object-fit: cover;
   object-position: center center;
-
 }
 
 .container-fluid{

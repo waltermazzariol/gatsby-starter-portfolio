@@ -11,17 +11,20 @@ import {Helmet} from "react-helmet"
 import ReactGA from 'react-ga'
 
 
-function SEO({page, description, lang, meta, title, metas, image }) {
+function SEO({page, description, lang, title, metas, image }) {
   const trackingId = metas.ua;
-  if(trackingId !== undefined){
+  if(trackingId !== ""){
     ReactGA.initialize(trackingId);
     ReactGA.pageview(`/${page}`);
   }
   
   
-  const metaDescription = description || metas.description
-  const imageURL = metas.siteurl+image.src
-  
+  const metaDescription = description || metas.seo_description
+  console.log(image.resize)
+  const imageURL = metas.siteurl+image.fluid.src
+  const imageURLHeight = image.resize.height
+  const imageURLWidth = image.resize.width
+
   return (
     <Helmet
       htmlAttributes={{
@@ -41,6 +44,14 @@ function SEO({page, description, lang, meta, title, metas, image }) {
         {
           property: `og:image`,
           content: imageURL,
+        },
+        {
+          property: "og:image:width",
+          content: imageURLWidth,
+        },
+        {
+          property: "og:image:height",
+          content: imageURLHeight,
         },
         {
           property: `og:description`,
@@ -74,15 +85,16 @@ function SEO({page, description, lang, meta, title, metas, image }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].concat(metas)}
     />
   )
 }
 
 SEO.defaultProps = {
-  lang: `es`,
-  meta: [],
+  lang: `en`,
+  metas: [],
   description: ``,
+  title: ``,
 }
 
 SEO.propTypes = {

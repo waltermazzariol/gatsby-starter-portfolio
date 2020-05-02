@@ -1,15 +1,15 @@
 // Base styling for the navbar
 #mainNav {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  background-color: $navbar-color;
   box-shadow: $text-shadow;
-  min-height: 60px;
+  min-height: $navbar-height;
 
   .navbar {
     &-brand {
-      font-family: $headings-font-family;
+      font-family: $navbar-font-family;
+      color: $navbar-text-color;
       text-transform: uppercase;
       font-size: 1rem;
-      color: $navbar-text-color;
       margin: 0 auto;
       img {
         max-width: 145px;
@@ -28,6 +28,7 @@
         outline: none;
       }
     }
+
     @include media-breakpoint-down(md) {
       &-collapse {
         position: absolute;
@@ -40,7 +41,7 @@
         height: 100vh;
         transition: all 0.3s ease;
         display: block;
-        background-color: white;
+        background-color: $navbar-togle-collapse;
         &.collapsing {
           margin-right: 50%;
           height: 100vh;
@@ -53,18 +54,18 @@
       }
       &-nav {
         .nav-item {
-          border-bottom: 1px solid #ddd;
+          border-bottom: 1px solid $navbar-togle-collapse-line;
           padding: 0.5rem 0 !important;
           font-size: 2rem;
         }
       }
     }
     &-cta a {
-      background-color: $primary;
+      background-color: $navbar-cta-bg-color;
       border-radius: 4px;
       padding: 0.3rem 0.6rem;
       i {
-        color: white;
+        color: $navbar-cta-color;
         font-size: 1rem;
       }
       &:focus {
@@ -72,7 +73,7 @@
       }
       &:hover {
         text-decoration: none;
-        background-color: darken($primary, 10%);
+        background-color: darken($navbar-cta-bg-color, 10%);
       }
     }
     &-nav {

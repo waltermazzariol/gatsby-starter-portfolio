@@ -27,7 +27,7 @@ function IndexPage(props) {
   return (
     <Layout nav={contentJson.navigation} >
 
-      <Seo page={'inicio'} title={contentJson.navigation.title} metas={contentJson.general} image={contentJson.about.image.childImageSharp.fluid} />
+      <Seo page={'inicio'} title={contentJson.navigation.title} lang={contentJson.general.lang} metas={contentJson.general} image={contentJson.about.image.childImageSharp} />
 
       <Hero data={contentJson.hero} />
 
@@ -90,124 +90,16 @@ export default IndexPage
 export const imageData = graphql`
   query{
       dataJson {
-        about {
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          list {
-            text
-          }
-          text
-          title
-        }
-        contact {
-          address
-          email
-          image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-          }
-          phone
-          socialmedia {
-            link
-            name
-          }
-        }
-        gallery {
-          gallery {
-            alt
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          title
-        }
-        general {
-          path
-          siteurl
-          seo_description
-          ua
-          lang
-        }
-        hero {
-          image {
-              publicURL
-          }
-          subtitle
-          title
-        }
-        navigation {
-          cta_button
-          cta_link
-          logo_active
-          logo_url{
-            publicURL
-          }
-          title
-          menu{
-            nav
-            link
-          }
-        }
-        portfolio {
-          projects {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 400) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            link
-            name
-            type
-          }
-          title
-        }
-        services {
-          description
-          icon {
-            publicURL
-          }
-          title
-        }
-        tags {
-          cookie_accept
-          cookie_message
-          date
-          event
-          location
-          viewless
-          viewmore
-        }
-        team {
-          person {
-            description
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            name
-            position
-            source
-          }
-          title
-        }
-      }    
+        ...aboutFields
+        ...contactFields
+        ...galleryFields
+        ...generalFields
+        ...heroFields
+        ...navigationFields
+        ...portfolioFields
+        ...servicesFields
+        ...tagsFields
+        ...teamFields
   }  
+}
 `

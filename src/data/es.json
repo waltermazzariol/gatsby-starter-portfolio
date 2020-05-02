@@ -1,7 +1,7 @@
 {
     "general": {
         "path": "/",
-        "siteurl": "/",
+        "siteurl": "https://modest-villani-fa0160.netlify.app",
         "seo-description": "React Developer - Est 1989",
         "ua": "",
         "lang": "en"
@@ -179,6 +179,9 @@
         "cookie-accept": "Accept",
         "event": "Título",
         "date": "Fecha",
-        "location": "Locación"
+        "location": "Locación",
+        "not-found-title": "404 not found",
+        "not-found-message": "You are in a wrong page.. Go back to our home",
+        "not-found-btn": "Home"
     }
 }
