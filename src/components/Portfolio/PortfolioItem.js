@@ -7,7 +7,7 @@ function PortfolioItem(props) {
         <>
             {props.data.map((key, index) =>
             <Zoom key={index}>
-                <div className="col-lg-4 col-sm-6 portfolio">
+                <div className="col-sm-6 col-lg-4 portfolio">
                     {key.image !== undefined ?
                     <div className="col-12">
                         <a className="portfolio-box portfolio-box-shadow box-image" href={key.link} target="_blank" rel="noopener noreferrer">
