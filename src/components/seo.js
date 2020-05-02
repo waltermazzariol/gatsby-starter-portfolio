@@ -12,7 +12,6 @@ import ReactGA from 'react-ga'
 
 
 function SEO({page, description, lang, meta, title, metas, image }) {
-  console.log(metas)
   const trackingId = metas.ua;
   if(trackingId !== undefined){
     ReactGA.initialize(trackingId);
