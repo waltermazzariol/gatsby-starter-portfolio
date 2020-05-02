@@ -9,26 +9,28 @@ function PortfolioItem(props) {
             <Zoom key={index}>
                 <div className="col-lg-4 col-sm-6 portfolio">
                     {key.image !== undefined ?
-                        <a className="portfolio-box box-image" href={key.link} target="_blank" rel="noopener noreferrer">
+                    <div className="col-12">
+                        <a className="portfolio-box portfolio-box-shadow box-image" href={key.link} target="_blank" rel="noopener noreferrer">
                             <img src={key.image.childImageSharp.fluid.src} className="fluido" alt={key.name} />
                             <div className="portfolio-box-over"></div>
-                        </a> : ''}
-                    <div className="row">
-                        <div className="col-12 portfolio-text">
-                            <h3 className="project-name">
+                        </a>
+                    </div> : ''}
+                    
+                        <div className="col-12">
+                            <h3 className="portfolio-box-title">
                                 <a className="portfolio-box" href={key.link} target="_blank" rel="noopener noreferrer">
                                     {key.name}
                                 </a>
                             </h3>
                         </div>
-                        <div className="col-12 portfolio-text">
-                            <div className="project-category">
+                        <div className="col-12">
+                            <div className="portfolio-box-subtitle">
                                 <a className="portfolio-box" href={key.link} target="_blank" rel="noopener noreferrer">
                                     {key.type}
                                 </a>
                             </div>
                         </div>
-                    </div>
+                  
                 </div>
             </Zoom>
         )}

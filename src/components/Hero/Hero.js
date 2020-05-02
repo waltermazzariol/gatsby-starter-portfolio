@@ -15,9 +15,9 @@ function Hero(props) {
       <Row className="hero-wrapper" noGutters>
         <div className="col-12 align-self-end">
           <Fade>
-          <h1 className="hero-title">{props.data.title}</h1>
-          <div className="hero-subtitle">{props.data.subtitle}</div>
-          <Line />
+            <h1 className="hero-title">{props.data.title}</h1>
+            <div className="hero-subtitle">{props.data.subtitle}</div>
+            <Line />
           </Fade>
         </div>
         <div className="col-12 hero-arrow align-self-end">
