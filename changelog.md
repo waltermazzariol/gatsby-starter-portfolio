@@ -8,6 +8,15 @@ All notable changes to this project will be documented in this file.
 - Dark mode
 - Change blocks for flex
 
+## [0.0.2] - 2020.05.06
+
+### Changed
+- Update components names
+- Unify naming
+
+### Removed
+- Remove useless components
+
 ## [0.0.1] - 2020.05.02
 
 ### Changed

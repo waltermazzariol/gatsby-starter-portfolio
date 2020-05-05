@@ -1,29 +1,31 @@
 import React from "react"
+
+// Libraries 
 import { graphql } from "gatsby"
 import { CookiesProvider } from 'react-cookie';
+import Img from 'gatsby-image'
+import Col from 'react-bootstrap/Col'
+import Fade from 'react-reveal/Fade'
 
-import Layout from "../components/Layout.js"
-import Seo from "../components/Seo.js"
-import Hero from "../components/Hero/Hero.js"
-import PortfolioItem from "../components/Portfolio/PortfolioItem"
-import GalleryItem from "../components/Gallery/GalleryItem.js"
-
+// Core components
 import Title from "../components/Common/Title"
 import List from "../components/Common/List"
 import Section from "../components/Common/Section"
-import TestimonialItem from "../components/TestimonialItem.js"
+import Layout from "../components/Layout.js"
+import Seo from "../components/Seo.js"
+import Hero from "../components/Hero/Hero.js"
+import GridRowItem from "../components/Portfolio/GridRowItem"
+import GalleryItem from "../components/Gallery/GalleryItem.js"
+import GridColumnItem from "../components/GridColumnItem.js"
 import Services from "../components/Services.js"
-import CookiesConsent from "../components/Cookies.js"
 import Contact from "../components/Contact.js"
+import CookiesConsent from "../components/Cookies.js"
 
-import Col from 'react-bootstrap/Col'
-import Fade from 'react-reveal/Fade'
-import Img from 'gatsby-image'
 
 function IndexPage(props) {
 
   const contentJson = props.data.dataJson
-
+  
   return (
     <Layout nav={contentJson.navigation} >
 
@@ -31,9 +33,9 @@ function IndexPage(props) {
 
       <Hero data={contentJson.hero} />
 
-      <Section anchor={'portfolio'} className={'portfolio'}>
+      <Section anchor={'portfolio'} className={'grid-row'}>
         <Title title={contentJson.portfolio.title} />
-        <PortfolioItem data={contentJson.portfolio.projects} />
+        <GridRowItem data={contentJson.portfolio.projects} />
       </Section>
 
       <Section anchor={'gallery'} className={'gallery'} fluid={true} noGutters={true}>
@@ -43,10 +45,9 @@ function IndexPage(props) {
 
       <Section anchor={'about'} className={'about'} >
         <Title title={contentJson.about.title} />
-
         <Col md="12" lg="5" align="text-center">
           <Fade>
-            <Img className="bio-image" fluid={contentJson.about.image.childImageSharp.fluid} alt="profile" />
+            <Img className="shadow-image" fluid={contentJson.about.image.childImageSharp.fluid} alt="profile" />
           </Fade>
         </Col>
         <Col md="12" lg="7">
@@ -64,9 +65,9 @@ function IndexPage(props) {
         </Col>
       </Section>
 
-      <Section anchor={'reviews'} className={'testimonial'} >
+      <Section anchor={'reviews'} className={'grid-column'} >
         <Title title={contentJson.team.title} />
-        <TestimonialItem data={contentJson.team.person} />
+        <GridColumnItem data={contentJson.team.person} />
       </Section>
 
       <Section anchor={'services'} className={'services my-4'} fluid={true} noGutters={true}>

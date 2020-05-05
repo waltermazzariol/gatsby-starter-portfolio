@@ -1,31 +1,31 @@
 import React from "react"
 import Zoom from 'react-reveal/Zoom';
 
-function PortfolioItem(props) {
+function GridRowItem(props) {
 
     return (
         <>
             {props.data.map((key, index) =>
             <Zoom key={index}>
-                <div className="col-sm-6 col-lg-4 portfolio">
+                <div className="col-sm-6 col-lg-4 grid-row">
                     {key.image !== undefined ?
                     <div className="col-12">
-                        <a className="portfolio-box portfolio-box-shadow box-image" href={key.link} target="_blank" rel="noopener noreferrer">
+                        <a className="grid-row-box grid-row-box-shadow box-image" href={key.link} target="_blank" rel="noopener noreferrer">
                             <img src={key.image.childImageSharp.fluid.src} className="fluido" alt={key.name} />
-                            <div className="portfolio-box-over"></div>
+                            <div className="grid-row-box-over"></div>
                         </a>
                     </div> : ''}
                     
                         <div className="col-12">
-                            <h3 className="portfolio-box-title">
-                                <a className="portfolio-box" href={key.link} target="_blank" rel="noopener noreferrer">
+                            <h3 className="grid-row-box-title">
+                                <a className="grid-row-box" href={key.link} target="_blank" rel="noopener noreferrer">
                                     {key.name}
                                 </a>
                             </h3>
                         </div>
                         <div className="col-12">
-                            <div className="portfolio-box-subtitle">
-                                <a className="portfolio-box" href={key.link} target="_blank" rel="noopener noreferrer">
+                            <div className="grid-row-box-subtitle">
+                                <a className="grid-row-box" href={key.link} target="_blank" rel="noopener noreferrer">
                                     {key.type}
                                 </a>
                             </div>
@@ -38,7 +38,7 @@ function PortfolioItem(props) {
     )
 }
 
-PortfolioItem.defaultProps = {
+GridRowItem.defaultProps = {
     data: [{
         name: "The One Life Coaching",
         type: "Microsite • React | 2020",
@@ -46,4 +46,4 @@ PortfolioItem.defaultProps = {
     }]
 }
 
-export default PortfolioItem
+export default GridRowItem

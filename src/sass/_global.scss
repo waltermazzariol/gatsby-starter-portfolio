@@ -161,6 +161,7 @@ hr {
   position: relative;
   overflow: hidden;
   padding-bottom: 100%;
+  box-shadow: $text-shadow;
 }
 img.fluido{
   position: absolute;
@@ -171,7 +172,13 @@ img.fluido{
   object-fit: cover;
   object-position: center center;
 }
-
+.shadow-image{
+  box-shadow: $text-shadow;
+  max-width: 100%;
+  height: 100%;  
+  margin-bottom: 2rem;   
+}
+  
 .container-fluid{
   padding: 0; 
 }
