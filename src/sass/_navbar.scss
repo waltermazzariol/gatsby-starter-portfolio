@@ -62,11 +62,15 @@
     }
     &-cta a {
       background-color: $navbar-cta-bg-color;
+      font-size: 0.85rem;
+      border: none;
       border-radius: 4px;
-      padding: 0.3rem 0.6rem;
+      padding: 0.7rem 1.5rem;
+      color: $navbar-cta-color;
       i {
         color: $navbar-cta-color;
         font-size: 1rem;
+        margin-right: 0.5rem;
       }
       &:focus {
         outline: none;

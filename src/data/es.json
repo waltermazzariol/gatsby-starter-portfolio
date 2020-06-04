@@ -10,7 +10,7 @@
         "title": "John Doe",
         "logo-active": false,
         "logo-url": "../images/assets/logo-wansite.svg",
-        "cta-button": "whatsapp",
+        "cta-button": "Contact",
         "cta-link": "https://wa.me/555555555",
         "menu": [
             {

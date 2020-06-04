@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family-base;
+  font-family: $headings-font-family;
   line-height: 1.5em;
 }
 h1,
@@ -44,7 +44,7 @@ h1 {
   line-height: 1.15em;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   line-height: 1.5em;
 }
 h3 {
@@ -62,7 +62,6 @@ h5 {
 h6 {
   font-size: 0.75rem;
   text-transform: uppercase;
-  font-weight: 500;
 }
 p {
   font-size: 1rem;
