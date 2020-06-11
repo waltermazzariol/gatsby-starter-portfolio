@@ -10,7 +10,7 @@ function GridRowItem(props) {
                 <div className="col-sm-6 col-lg-4 grid-row">
                     {key.image !== undefined ?
                     <div className="col-12">
-                        <a className="grid-row-box grid-row-box-shadow box-image" href={key.link} target="_blank" rel="noopener noreferrer">
+                        <a className="grid-row-box box-image shadow-image" href={key.link} target="_blank" rel="noopener noreferrer">
                             <img src={key.image.childImageSharp.fluid.src} className="fluido" alt={key.name} />
                             <div className="grid-row-box-over"></div>
                         </a>

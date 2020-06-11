@@ -1,0 +1,22 @@
+.grid-column {
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+  }
+  &-title {
+    color: $dark-black;
+    margin-bottom: 0.3rem;
+  }
+  &-source {
+    color: $gray-600;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    font-style: italic;
+    i {
+      color: $gray-600;
+    }
+  }  
+}

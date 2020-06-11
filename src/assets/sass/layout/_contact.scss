@@ -9,6 +9,9 @@
   .container {
     padding-top: 6rem;
     padding-bottom: 6rem;
+    &-fluid{
+      padding: 0;
+    }
   }
 
   .map {

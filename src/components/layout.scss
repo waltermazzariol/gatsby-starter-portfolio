@@ -1,20 +1,2 @@
-// Import custom variables (overrides Bootstrap default variables)
-@import "../sass/variables.scss";
-
-// Import font awesome
-@import "~@fortawesome/fontawesome-free/css/all.css";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-
-// Import Bootstrap
-@import "~bootstrap/scss/bootstrap";
-
 // Import custom styles
-@import "../sass/global.scss";
-@import "../sass/navbar.scss";
-@import "../sass/hero.scss";
-@import "../sass/about.scss";
-@import "../sass/grid-row.scss";
-@import "../sass/grid-column.scss";
-@import "../sass/gallery.scss";
-@import "../sass/contact.scss";
-@import "../sass/cookies.scss";
+@import "../assets/sass/main.scss";

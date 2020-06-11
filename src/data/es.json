@@ -9,8 +9,8 @@
     "navigation": {
         "title": "John Doe",
         "logo-active": false,
-        "logo-url": "../images/assets/logo-wansite.svg",
-        "cta-button": "whatsapp",
+        "logo-url": "../assets/images/logo-wansite.svg",
+        "cta-button": "Contact",
         "cta-link": "https://wa.me/555555555",
         "menu": [
             {
@@ -30,8 +30,8 @@
                 "link": "#reviews"
             },
             {
-                "nav": "Contact",
-                "link": "#contact"
+                "nav": "Location",
+                "link": "#location"
             }
         ]
     },
@@ -115,28 +115,6 @@
         ],
         "image": "./images/profile.jpg"
     },
-    "services": [
-        {
-            "title": "Designer",
-            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
-            "icon": "../images/assets/process_notebook.svg"
-        },
-        {
-            "title": "Fontend",
-            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
-            "icon": "../images/assets/process_stack.svg"
-        },
-        {
-            "title": "Backend",
-            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
-            "icon": "../images/assets/process_arrow.svg"
-        },
-        {
-            "title": "Architect",
-            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
-            "icon": "../images/assets/process_mixer.svg"
-        }
-    ],
     "team": {
         "title": "Reviews",
         "person": [
@@ -156,6 +134,28 @@
             }
         ]
     },
+    "services": [
+        {
+            "title": "Designer",
+            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
+            "icon": "../assets/images/process_notebook.svg"
+        },
+        {
+            "title": "Frontend",
+            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
+            "icon": "../assets/images/process_stack.svg"
+        },
+        {
+            "title": "Backend",
+            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
+            "icon": "../assets/images/process_arrow.svg"
+        },
+        {
+            "title": "Architect",
+            "description": "Product development is my focus in recent years, with my team we are in charge of constantly evolving and improving technological products based on the needs of users.",
+            "icon": "../assets/images/process_mixer.svg"
+        }
+    ],
     "contact": {
         "phone": "+346666666",
         "email": "johndoe@gmail.com",
@@ -173,13 +173,8 @@
         "image": "./images/footer.jpg"
     },
     "tags": {
-        "viewmore": "Ver más",
-        "viewless": "Ver menos",
         "cookie-message": "We use our own and third party cookies to improve your user experience.",
         "cookie-accept": "Accept",
-        "event": "Título",
-        "date": "Fecha",
-        "location": "Locación",
         "not-found-title": "404 not found",
         "not-found-message": "You are in a wrong page.. Go back to our home",
         "not-found-btn": "Home"

@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+// https://bootstrapvars.com/4.4/
+
+$red:                         #f05555;
+$gray-100:                    #f7f7f7;
+$gray-200:                    #e4e4e4;
+$gray-900:                    #30302e;
+$beige-100:                   #f0ebe3;
+$dark-black:                  #444;
+$darker-black:                #333;
+$black:                       #000000;
+$orange:                      #f4623a;
+$brown:                       #5c4d42;
+$blue:                        #03a9f4;
+$green:                       #75d69c;
+$red:                         #D0011B;
+$light-blue:                  #27496d;
+$dark-blue:                   #142850;
+$dark-gray:                   #666;
+$light-gray:                  #dbdbdb;
+$primary:                       $blue;
+$secondary:                     darken( $primary, 10% );
+$success:                       $green;
+$info:                          $gray-900;
+$warning:                       $primary;
+$danger:                        $red;
+
+
+// Text Colors
+$text-color-1:                  $darker-black;
+$text-color-2:                  $primary;
+$text-color-3:                  $black;
+$text-color-4:                  #031532;
+$text-color-a:                  $black;
+$text-color:                    $dark-gray;
+$header-color:                  $text-color-1;
+
+// Font Family
+$font-family-roboto:            "Roboto", sans-serif;
+$font-family-natosans:          "Nato Sans", sans-serif;
+$font-family-opensans:          "Open Sans", sans-serif;
+
+// Font Size
+$font-size-base: 1rem;
+
+// Font Weight
+$font-weight-lighter:           lighter;
+$font-weight-light:             300;
+$font-weight-normal:            400;
+$font-weight-medium:            500;
+$font-weight-semibold:          600;
+$font-weight-bold:              700;
+$font-weight-bolder:            800;
+$font-weight-black:             900;
+$font-weight-base:              $font-weight-normal;
+$line-height-base:              1.5;
+
+// Body
+$body-background:               #FFFFFF;
+
+// Header
+$h1-font-size:                  $font-size-base * 3;
+$h2-font-size:                  $font-size-base * 2.4375;
+$h3-font-size:                  $font-size-base * 1.5;
+$h4-font-size:                  $font-size-base * 0.9375;
+$h5-font-size:                  $font-size-base * 0.75;
+$h6-font-size:                  $font-size-base * 0.6875;
+$h1-line-height:                $font-size-base * 4.5;
+$h2-line-height:                $font-size-base * 3;
+$h3-line-height:                $font-size-base * 2.25;
+$h4-line-height:                $font-size-base * 1.5;
+$h5-line-height:                $font-size-base * 1.5;
+$h6-line-height:                $font-size-base * 1.5;
+
+// Header Touch
+$h1-font-size-touch:            $font-size-base * 2.25;
+$h2-font-size-touch:            $font-size-base * 1.5;
+$h3-font-size-touch:            $font-size-base * 1.0625;
+$h4-font-size-touch:            $font-size-base * 0.875;
+$h5-font-size-touch:            $font-size-base * 0.75;
+$h6-font-size-touch:            $font-size-base * 0.6875;
+$h1-line-height-touch:          $font-size-base * 2.5;
+$h2-line-height-touch:          $font-size-base * 2.25;
+$h3-line-height-touch:          $font-size-base * 1.5;
+$h4-line-height-touch:          $font-size-base * 1.5;
+$h5-line-height-touch:          $font-size-base * 1.5;
+$h6-line-height-touch:          $font-size-base * 1.5;
+
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1440px
+);
+
+// Font overrides
+$font-family-sans-serif: $font-family-opensans;
+$font-family-serif: $font-family-roboto;
+
+$font-family-base: $font-family-serif !default;
+$headings-font-family: $font-family-sans-serif !default;
+
+// Custom variables
+$navbar-height: 60px;
+
+$text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+$text-shadow-2: 0 1px 2px rgba(0, 0, 0, 0.5);
+
+$navbar-color: white;
+$navbar-cta-color: white;
+$navbar-cta-bg-color: $primary;
+$navbar-text-color: $text-color-1;
+$navbar-text-color-hover: rgba(200, 200, 200, 0.2);
+$navbar-font-family: $headings-font-family;
+
+
+$navbar-togle-collapse: white;
+$navbar-togle-collapse-line: #ddd;

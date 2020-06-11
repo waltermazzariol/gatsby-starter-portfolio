@@ -154,11 +154,6 @@ fragment tagsFields on DataJson {
   tags {
     cookie_accept
     cookie_message
-    date
-    event
-    location
-    viewless
-    viewmore
     not_found_title
     not_found_message
     not_found_btn

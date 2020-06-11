@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables';
+  // 'abstracts/functions',
+  // 'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize',
+  'vendors/bootstrap';
+
+  // Import font awesome
+  @import "~@fortawesome/fontawesome-free/css/all.css";
+  @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/about',
+  'layout/calendar',
+  'layout/contact',
+  'layout/gallery',
+  'layout/grid-column',
+  'layout/grid-row',
+  'layout/hero',
+  'layout/navbar',
+  'layout/modal',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/image',
+  'components/button',
+  'components/cookies',
+  'components/image',
+  'components/hr',
+  'components/carousel',
+  'components/input';
+
+// 6. Page-specific styles
+@import
+  'pages/index';
+
+// 7. Themes
+@import
+  'themes/default';

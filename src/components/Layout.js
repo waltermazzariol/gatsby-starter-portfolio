@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Navbar from "./Navbar"
 import "./layout.scss"
-import logo from "../images/assets/logo-wansite.svg"
+import logo from "../assets/images/logo-wansite.svg"
 
 
 const getScrollNode = (element) => {

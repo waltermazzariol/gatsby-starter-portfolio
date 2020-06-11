@@ -1,6 +1,6 @@
 import React from "react"
 import Zoom from 'react-reveal/Zoom';
-import GalleryModal from "./Modal"
+import GalleryModal from "../Common/Modal"
 import GalleryCarousel from "./Carousel"
 
 export default class createGallery extends React.Component {

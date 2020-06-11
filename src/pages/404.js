@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import Hero from "../components/Hero/Hero"
+import Hero from "../components/Hero"
 
 export const navData = graphql`  
 query {

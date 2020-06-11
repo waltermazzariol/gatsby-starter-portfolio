@@ -1,0 +1,15 @@
+.form-group{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.form-control{
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid #adadad;
+    height: 3rem;
+    &:focus{
+        box-shadow: none;
+        border: 2px solid $black;
+    }
+}

@@ -1,9 +1,9 @@
 import React from "react"
-import DownArrow from "../../images/assets/down-arrow.svg"
+import DownArrow from "../assets/images/down-arrow.svg"
 import Bounce from 'react-reveal/Bounce'
 import Fade from 'react-reveal/Fade'
 
-import Line from '../Common/Line'
+import Line from './Common/Line'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 

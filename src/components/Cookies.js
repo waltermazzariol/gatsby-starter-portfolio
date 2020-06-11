@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import CookieIcon from "../images/assets/cookie.svg"
+import CookieIcon from "../assets/images/cookie.svg"
 import { instanceOf } from 'prop-types';
 import { withCookies, Cookies } from 'react-cookie';
 

@@ -8,6 +8,14 @@ All notable changes to this project will be documented in this file.
 - Dark mode
 - Change blocks for flex
 
+## [0.0.3] - 2020.06.11
+
+### Changed
+- Refactor Sass Structure
+- Add sass files on assets folder
+- Add mixing and functions
+- Add text to nav button
+
 ## [0.0.2] - 2020.05.06
 
 ### Changed
