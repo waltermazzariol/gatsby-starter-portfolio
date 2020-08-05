@@ -16,6 +16,7 @@ fragment navigationFields on DataJson {
   navigation {
     cta_button
     cta_link
+    cta_type
     logo_active
     logo_url{
       publicURL

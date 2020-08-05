@@ -23,7 +23,7 @@ const NotFoundPage = (props) => (
         lang={props.data.dataJson.general.lang} 
         metas={props.data.dataJson.general} 
         image={props.data.dataJson.about.image.childImageSharp} />
-    <Hero data={props.data.dataJson.hero} />
+    <Hero data={props.data.dataJson.hero} nav={props.data.dataJson.navigation}/>
     <div className="container my-5">
       <div className="row">
         <div className="col-12 text-center">

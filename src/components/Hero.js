@@ -3,7 +3,6 @@ import DownArrow from "../assets/images/down-arrow.svg"
 import Bounce from 'react-reveal/Bounce'
 import Fade from 'react-reveal/Fade'
 
-import Line from './Common/Line'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
@@ -17,7 +16,7 @@ function Hero(props) {
           <Fade>
             <h1 className="hero-title">{props.data.title}</h1>
             <div className="hero-subtitle">{props.data.subtitle}</div>
-            <Line />
+            <button className="btn-basic mt-4"><a href={props.nav.cta_link} target="_blank" rel="noopener noreferrer"><i className={`fab fa-${props.nav.cta_type} mr-2`}></i>{props.nav.cta_button}</a></button>
           </Fade>
         </div>
         <div className="col-12 hero-arrow align-self-end">

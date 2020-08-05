@@ -31,7 +31,7 @@ function IndexPage(props) {
 
       <Seo page={'inicio'} title={contentJson.navigation.title} lang={contentJson.general.lang} metas={contentJson.general} image={contentJson.about.image.childImageSharp} />
 
-      <Hero data={contentJson.hero} />
+      <Hero data={contentJson.hero} nav={contentJson.navigation}/>
 
       <Section anchor={'portfolio'} className={'grid-row'}>
         <Title title={contentJson.portfolio.title} />
