@@ -1,20 +1,16 @@
 import React from "react"
-
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-
 import styled from 'styled-components'
 
 import logo from "../assets/images/logo-wansite-light.svg"
 
+const FooterContainer = styled.div`
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #141414;
+`
 
 const FooterWrapper = styled.div`
-  background-color: #333333;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 `
@@ -32,6 +28,10 @@ const FooterText = styled.div`
   color: #FFFFFF;
   a {
     color: #d7d7d7;
+    &:hover{
+      color: ${props => props.theme.PrimaryColor};
+      text-decoration: none;
+    }
   }
 `
 const Logo = styled.img`
@@ -49,23 +49,20 @@ function Footer({ data }) {
     }
   }
   return (
-    <Container fluid>
-      <Row noGutters>
-        <Col xs={12}>
-          <FooterWrapper style={{ backgroundImage: 'linear-gradient(to right bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(' + bg + ')' }}>
+    <FooterContainer
+      style={{ backgroundImage: 'linear-gradient(to right bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(' + bg + ')' }}>
+          <FooterWrapper className="d-flex flex-column justify-content-center align-items-center text-center">
             {data.social_icons !== undefined ?
               <SocialIcon>
                 {data.social_icons.map((key) => <a key={key.name} href={key.link} target="_blank" rel="noopener noreferrer"><i className={`fa-2x ${key.name}`} aria-label="social button"></i></a>)}
               </SocialIcon> : ""}
-            {data.description ? <FooterText><i className="fas fa-location-arrow mt-3"></i> {data.description} </FooterText> : ""}
-            {data.title ? <FooterText><i className="fas fa-phone mt-3"></i> <a href={data.title}> {data.title}</a></FooterText> : ""}
+            {data.description ? <FooterText><i className="fas fa-location-arrow mt-3 mr-1"></i> {data.description} </FooterText> : ""}
+            {data.title ? <FooterText><i className="fas fa-phone fa-flip-horizontal mt-3 mr-1"></i> <a href={data.title}> {data.title}</a></FooterText> : ""}
           </FooterWrapper>
-        </Col>
-        <Col xs={12} className="bg-dark text-light text-center">
+        <div className="bg-dark text-light text-center">
           <a href="https://wansite.co" target="_blank" rel="noreferrer"><Logo src={logo} alt="wansite logo" /></a>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+    </FooterContainer>
   )
 }
 

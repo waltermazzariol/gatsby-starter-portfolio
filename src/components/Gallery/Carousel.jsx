@@ -2,14 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Carousel } from "react-bootstrap"
 
-// import "./carousel.scss"
-
 const PortfolioCarousel = ({ images, current }) => {
   const carouselItems = images.map((image, index) =>
     <Carousel.Item key={index}>
       <figure>
         <img loading="lazy" src={image.fileImage.imageURL} alt="gallery"/>
-        <figcaption>
+        <figcaption className="w-100">
           <div className="bottom-bar">
             <div className="counter">{index + 1} of {images.length}</div>
           </div>

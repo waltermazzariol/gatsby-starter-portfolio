@@ -15,7 +15,6 @@ const HeroTitle = styled.div`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 0.1rem;
-    text-transform: uppercase;
     @media (min-width: 768px){
       font-size: 3.5rem;
     }
@@ -47,6 +46,7 @@ const HeroButton = styled.a`
     &:hover {
         background-color: ${props => props.theme.SecundaryColor};
         color: #ffffff;
+        
     }
 `
 
@@ -61,7 +61,6 @@ function Hero({ data }) {
 
   return (
     <HeroContainer
-      fluid
       style={{ backgroundImage: 'linear-gradient(to right bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(' + bg + ')' }}>
       <HeroWrapper className="d-flex flex-column justify-content-center align-items-center text-center">
         {data.title ? <HeroTitle>{data.title}</HeroTitle> : ""}

@@ -1,7 +1,8 @@
 import React from "react"
-import GalleryModal from "./Modal"
 import GalleryCarousel from "./Carousel"
 import Title from "../Title"
+
+import { Modal } from "react-bootstrap"
 
 import Container from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -53,17 +54,26 @@ export default class createGallery extends React.Component {
     return (
       <Container className="pb-5 px-0">
         <Row noGutters>
-          {this.props.data.title ? <Title data={this.props.data.title} />:""}
+          {this.props.data.title ? <Title data={this.props.data.title} /> : ""}
           {this.props.data.list !== undefined ? <>
             {this.props.data.list.map((key, index) =>
-                <GalleryWrapper key={index} style={{ backgroundImage: `url(${key.fileImage.imageURL})`, backgroundSize: 'cover' }}>
-                  <a href={key.fileImage.imageURL} onClick={this.handlePortfolioClick.bind(this, index)}>
-                  </a>
-                </GalleryWrapper>
-            )}</>: ""}
-          <GalleryModal show={this.state.modalShow} onHide={() => this.setModal(false, 0)}>
-            <GalleryCarousel images={this.props.data.list} current={this.state.modalCurrent} />
-          </GalleryModal>
+              <GalleryWrapper key={index} style={{ backgroundImage: `url(${key.fileImage.imageURL})`, backgroundSize: 'cover' }}>
+                <a href={key.fileImage.imageURL} onClick={this.handlePortfolioClick.bind(this, index)}>
+                </a>
+              </GalleryWrapper>
+            )}</> : ""}
+          <Modal
+            show={this.state.modalShow}
+            onHide={() => this.setModal(false, 0)}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered>
+            <Modal.Header closeButton>
+            </Modal.Header>
+            <Modal.Body>
+              <GalleryCarousel images={this.props.data.list} current={this.state.modalCurrent} />
+            </Modal.Body>
+          </Modal>
         </Row>
       </Container>
     )

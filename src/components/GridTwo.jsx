@@ -19,7 +19,7 @@ function GridTwo({ data }) {
             <Row>
                 {data.title ? <Title data={data.title} />:""}
                 {data.fileImage !== undefined ?
-                    <Col xs="12" md="5" className="text-center mb-2">
+                    <Col xs="12" md="5" className="text-center mb-4">
                        {data.fileImage.imageURL ? <Image data={data.fileImage.imageURL} />: <div className="bg-secundary"></div>}
                     </Col>
                     : ""}
