@@ -1,4 +1,5 @@
 .contact {
+  background-color: $darker-black;
   .text {
     margin-bottom: 0.5rem;
     color: #fff;
@@ -6,42 +7,14 @@
       color: #d7d7d7;
     }
   }
-  .container {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    &-fluid{
-      padding: 0;
-    }
-  }
 
-  .map {
-    max-width: 400px;
-    margin: 0.5rem auto;
-  }
   .social-contact {
-    margin-top: 2rem;
-
     a i {
       margin: 1rem; 
       color: white;
       &:hover{
         color: $primary;
       }     
-    }
-  }
-  .instagram-img img {
-    max-height: 90px;
-  }
-  &-bg {
-    // padding-bottom: calc(10rem - #{$navbar-height});
-    background-repeat: no-repeat;
-    background-attachment: scroll !important;
-    background-size: cover;
-    margin: 0;
-    max-height: 100%;
-    max-width: 100%;
-    @include media-breakpoint-up(lg) {
-      background-attachment: scroll !important;
     }
   }
 }

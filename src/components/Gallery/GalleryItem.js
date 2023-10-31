@@ -31,8 +31,8 @@ export default class createGallery extends React.Component {
     return (
       <>
         {images.map((key, index) =>
-            <div key={index} className={`col-md-3 grid px-0 ${className}`} style={{ backgroundImage: `url(${key.image.childImageSharp.fluid.src})`, backgroundSize: 'cover' }}>
-              <a href={key.image.childImageSharp.fluid.src} onClick={this.handlePortfolioClick.bind(this, index)}>
+            <div key={index} className={`col-md-3 grid px-0 ${className}`} style={{ backgroundImage: `url(${key.image.publicURL})`, backgroundSize: 'cover' }}>
+              <a href={key.image.publicURL} onClick={this.handlePortfolioClick.bind(this, index)}>
               </a>
             </div>
         )}

@@ -13,7 +13,7 @@ function GridColumn({ data }) {
               <div className="row justify-content-center">
                 <div className="col-md-2 col-sm-12">
                   <div className="box-image mt-1">
-                    <img src={key.image.childImageSharp.fluid.src} className="fluido" alt={key.name} />
+                    <img src={key.image.publicURL} className="fluido" alt={key.name} />
                   </div>
                 </div>
                 <div className="col-md-8 col-sm-12 grid-column">

@@ -1,6 +1,6 @@
 import React from "react"
 
-function GridRowItem(props) {
+function Portfolio(props) {
 
     return (
         <>
@@ -9,11 +9,10 @@ function GridRowItem(props) {
                     {key.image !== undefined ?
                     <div className="col-12">
                         <a className="grid-row-box box-image shadow-image" href={key.link} target="_blank" rel="noopener noreferrer">
-                            <img src={key.image.childImageSharp.fluid.src} className="fluido" alt={key.name} />
+                            <img src={key.image.publicURL} className="fluido" alt={key.name} />
                             <div className="grid-row-box-over"></div>
                         </a>
                     </div> : ''}
-                    
                         <div className="col-12">
                             <h3 className="grid-row-box-title">
                                 <a className="grid-row-box" href={key.link} target="_blank" rel="noopener noreferrer">
@@ -33,13 +32,4 @@ function GridRowItem(props) {
         </>
     )
 }
-
-GridRowItem.defaultProps = {
-    data: [{
-        name: "The One Life Coaching",
-        type: "Microsite • React | 2020",
-        link: "https://theonelifecoaching.com",
-    }]
-}
-
-export default GridRowItem
+export default Portfolio

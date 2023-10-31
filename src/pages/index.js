@@ -12,9 +12,9 @@ import Seo from "../components/Seo.js"
 import Hero from "../components/Hero.js"
 import Portfolio from "../components/Portfolio"
 import GalleryItem from "../components/Gallery/GalleryItem.js"
-import GridColumnItem from "../components/GridColumnItem.js"
+import Reviews from "../components/Reviews.js"
 import Services from "../components/Services.js"
-import Footer from "../components/Footer.js"
+import Contact from "../components/Contact.js"
 import CookiesConsent from "../components/Cookies.js"
 import About from "../components/About";
 
@@ -45,7 +45,7 @@ function IndexPage(props) {
 
       <Section anchor={'reviews'} className={'grid-column'} >
         <Title title={contentJson.team.title} />
-        <GridColumnItem data={contentJson.team.person} />
+        <Reviews data={contentJson.team.person} />
       </Section>
 
       <Section anchor={'services'} className={'services my-4'} fluid={true} rowClass={"g-0"}>
@@ -53,7 +53,7 @@ function IndexPage(props) {
       </Section>
 
       <Section anchor={'location'} className={'contact'} fluid={true} rowClass={"g-0"}>
-        <Footer data={contentJson.contact} />
+        <Contact data={contentJson.contact} />
       </Section>
 
       <CookiesProvider>
@@ -78,7 +78,7 @@ export function Head(props) {
   }
 
 
-export const imageData = graphql`
+export const data = graphql`
   query{
       dataJson {
         ...aboutFields

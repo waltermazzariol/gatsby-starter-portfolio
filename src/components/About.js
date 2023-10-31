@@ -7,7 +7,7 @@ function About(props) {
   return (
     <>
         <Col md="12" lg="5" align="text-center">
-          <img className="shadow-image mb-4" src={props.data.image.publicURL} alt="profile" />
+          <img className="shadow-image img-fluid mb-4" src={props.data.image.publicURL} alt="profile" />
          </Col>
         <Col md="12" lg="7">
             <div className="mb-4"> {props.data.text.split ('\n').map ((item, i) => <p key={i}>{item}</p>)}</div>

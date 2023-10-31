@@ -5,24 +5,13 @@ import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 
-export const navData = graphql`  
-query {
-  dataJson {
-    ...aboutFields
-    ...generalFields
-    ...heroFields
-    ...navigationFields
-    ...tagsFields
-  }
-}`
-
 const NotFoundPage = (props) => (
   <Layout nav={props.data.dataJson.navigation} >
-    <Seo page={'404'} 
-        title={props.data.dataJson.navigation.title} 
+    <Seo page={"404"} 
+        title={"404 page"} 
         lang={props.data.dataJson.general.lang} 
         metas={props.data.dataJson.general} 
-        image={props.data.dataJson.about.image.childImageSharp} />
+        image={props.data.dataJson.about.image.publicURL} />
     <Hero data={props.data.dataJson.hero} nav={props.data.dataJson.navigation}/>
     <div className="container my-5">
       <div className="row">
@@ -38,3 +27,23 @@ const NotFoundPage = (props) => (
 
 export default NotFoundPage
 
+export function Head(props) {
+  return (
+    <Seo page={"404"} 
+        title={"404 page"} 
+        lang={props.data.dataJson.general.lang} 
+        metas={props.data.dataJson.general} 
+        image={props.data.dataJson.about.image.publicURL} />
+  )
+  }
+
+export const data = graphql`  
+query {
+  dataJson {
+    ...aboutFields
+    ...generalFields
+    ...heroFields
+    ...navigationFields
+    ...tagsFields
+  }
+}`

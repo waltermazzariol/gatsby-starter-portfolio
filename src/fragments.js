@@ -35,10 +35,9 @@ fragment portfolioFields on DataJson {
     projects {
       alt
       image {
+        publicURL
         childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData
         }
       }
       link
@@ -54,6 +53,9 @@ fragment heroFields on DataJson {
   hero {
     image {
         publicURL
+        childImageSharp {
+          gatsbyImageData
+        }
     }
     subtitle
     title
@@ -65,6 +67,9 @@ fragment aboutFields on DataJson {
   about {
     image {
       publicURL
+      childImageSharp {
+        gatsbyImageData
+      }
     }
     list {
       text
@@ -91,10 +96,9 @@ fragment teamFields on DataJson {
     person {
       description
       image {
+        publicURL
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData
         }
       }
       name
@@ -111,11 +115,10 @@ fragment contactFields on DataJson {
     address
     email
     image {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      publicURL
+      childImageSharp {
+        gatsbyImageData
+      }
     }
     phone
     socialmedia {
@@ -131,10 +134,9 @@ fragment galleryFields on DataJson {
     gallery {
       alt
       image {
+        publicURL
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData
         }
       }
     }

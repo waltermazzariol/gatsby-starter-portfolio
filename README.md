@@ -1,8 +1,8 @@
 # Gatsby Starter for portfolio showcase
 
-Gatsby implementation of [Wansite Starter](https://modest-villani-fa0160.netlify.app/) template.
+Gatsby implementation of [Gatsby Starter Portfolio](gatsby-starter-portfolio.netlify.app) template.
 
-[**Demo Website**](https://modest-villani-fa0160.netlify.app/)
+[**Demo Website**](gatsby-starter-portfolio.netlify.app)
 
 ## 🔥 Features
 
