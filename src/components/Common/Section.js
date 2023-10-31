@@ -5,19 +5,12 @@ import Row from 'react-bootstrap/Row'
 function Section(props) {
 
   return (
-    <section id={props.anchor} className={props.className}>
-      <Container fluid={props.fluid} >
-        <Row noGutters={props.noGutters} >
+      <Container id={props.anchor} className={props.className} fluid={props.fluid} >
+        <Row className={props.rowClass} >
           {props.children}
         </Row>
       </Container>
-    </section>
   )
-}
-
-Section.defaultProps = {
-  fluid: false,
-  noGutters: false
 }
 
 export default Section

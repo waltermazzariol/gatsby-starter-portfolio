@@ -18,7 +18,7 @@ query {
 
 const NotFoundPage = (props) => (
   <Layout nav={props.data.dataJson.navigation} >
-    <Seo page={'inicio'} 
+    <Seo page={'404'} 
         title={props.data.dataJson.navigation.title} 
         lang={props.data.dataJson.general.lang} 
         metas={props.data.dataJson.general} 
@@ -29,7 +29,7 @@ const NotFoundPage = (props) => (
         <div className="col-12 text-center">
           <h1>{props.data.dataJson.tags.not_found_title}</h1>
           <p>{props.data.dataJson.tags.not_found_message}</p>
-          <a className="btn btn-xl btn-primary" href="/" >{props.data.dataJson.tags.not_found_btn}</a>
+          <a className="btn btn-xl btn-primary text-white" href="/" >{props.data.dataJson.tags.not_found_btn}</a>
         </div>
       </div>
     </div>

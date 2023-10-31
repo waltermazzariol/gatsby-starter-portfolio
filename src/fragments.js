@@ -64,15 +64,7 @@ export const aboutFields = graphql`
 fragment aboutFields on DataJson {
   about {
     image {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-        resize {
-          width
-          height
-        }
-      }
+      publicURL
     }
     list {
       text

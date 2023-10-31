@@ -1,5 +1,4 @@
 import React from "react"
-import Fade from 'react-reveal/Fade';
 
 import Col from 'react-bootstrap/Col'
 
@@ -10,8 +9,7 @@ function GridColumn({ data }) {
     <Col>
       <ul>
         {data.map((key, index) =>
-          <Fade key={index} left>
-            <li>
+            <li key={index}>
               <div className="row justify-content-center">
                 <div className="col-md-2 col-sm-12">
                   <div className="box-image mt-1">
@@ -25,7 +23,6 @@ function GridColumn({ data }) {
                 </div>
               </div>
             </li>
-          </Fade>
         )}
       </ul>
     </Col>

@@ -3,7 +3,7 @@ import React from "react"
 function Line(props) {
     
     return (
-            <hr className="divider" align={props.align}/>
+            <center><hr className="divider" align={props.align}/></center>
        )
 }
 

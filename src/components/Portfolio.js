@@ -1,13 +1,11 @@
 import React from "react"
-import Zoom from 'react-reveal/Zoom';
 
 function GridRowItem(props) {
 
     return (
         <>
             {props.data.map((key, index) =>
-            <Zoom key={index}>
-                <div className="col-sm-6 col-lg-4 grid-row">
+                <div key={index} className="col-sm-6 col-lg-4 grid-row">
                     {key.image !== undefined ?
                     <div className="col-12">
                         <a className="grid-row-box box-image shadow-image" href={key.link} target="_blank" rel="noopener noreferrer">
@@ -29,10 +27,8 @@ function GridRowItem(props) {
                                     {key.type}
                                 </a>
                             </div>
-                        </div>
-                  
+                        </div>                  
                 </div>
-            </Zoom>
         )}
         </>
     )

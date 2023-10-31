@@ -20,7 +20,7 @@ function SEO({page, description, lang, title, metas, image }) {
   
   
   const metaDescription = description || metas.seo_description
-  const imageURL = metas.siteurl+image.fluid.src
+  const imageURL = metas.siteurl+image
   const imageURLHeight = image.resize.height
   const imageURLWidth = image.resize.width
 

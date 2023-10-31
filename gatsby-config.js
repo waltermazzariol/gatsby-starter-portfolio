@@ -1,10 +1,9 @@
 module.exports = {
-  pathPrefix: `/micropat`,
+  pathPrefix: `/gatsby-starter-portfolio`,
   siteMetadata: {
-    author: `@gatsbyjs`,
+    author: `@waltermazzariol`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,7 +19,6 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
@@ -49,14 +47,5 @@ module.exports = {
         }
       }
     },
-  //   {
-  //     resolve: 'gatsby-plugin-mailchimp',
-  //     options: {
-  //         endpoint: '', // add your MC list endpoint here; see instructions below
-  //     },
-  // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

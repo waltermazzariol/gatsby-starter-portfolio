@@ -3,8 +3,6 @@
 // 1. Configuration and helpers
 @import
   'abstracts/variables';
-  // 'abstracts/functions',
-  // 'abstracts/mixins';
 
 // 2. Vendors
 @import
@@ -19,14 +17,11 @@
 // 3. Base stuff
 @import
   'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+  'base/typography';
 
 // 4. Layout-related sections
 @import
   'layout/about',
-  'layout/calendar',
   'layout/contact',
   'layout/gallery',
   'layout/grid-column',
@@ -42,14 +37,4 @@
   'components/button',
   'components/cookies',
   'components/image',
-  'components/hr',
-  'components/carousel',
-  'components/input';
-
-// 6. Page-specific styles
-@import
-  'pages/index';
-
-// 7. Themes
-@import
-  'themes/default';
+  'components/hr';
