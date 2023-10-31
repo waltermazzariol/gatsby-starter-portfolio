@@ -12,7 +12,7 @@
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
     color: #ffffff;
-    background-color: $navbar-cta-bg-color;
+    background-color: $primary;
     a{
       color: inherit;
     }
@@ -25,7 +25,7 @@
     }
     &:hover {
       text-decoration: none;
-      background-color: darken($navbar-cta-bg-color, 10%);
+      background-color: darken($primary, 10%)!important;
     }
   }
 }

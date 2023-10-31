@@ -44,13 +44,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Roboto:400,700', 'Open+Sans:400']
-        }
-      }
-    },
   ],
 }

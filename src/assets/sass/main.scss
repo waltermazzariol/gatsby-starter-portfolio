@@ -12,8 +12,11 @@
   // Import font awesome
   @import "~@fortawesome/fontawesome-free/css/all.css";
   @import "~@fortawesome/fontawesome-free/scss/fontawesome";
-
-
+  @import "~@fontsource/inter/400.css";
+  @import "~@fontsource/inter/600.css";
+  @import "~@fontsource/anton/400.css";
+  @import "~@fontsource/roboto/400.css";
+  @import "~@fontsource/roboto/700.css";
 // 3. Base stuff
 @import
   'base/base',

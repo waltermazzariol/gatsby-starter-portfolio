@@ -22,7 +22,7 @@
 
     &-text {
         font-size: 0.8rem;
-        color: $dark-gray;
+        color: $text-color;
     }
     &-accept {
         display: inline-block;
@@ -30,7 +30,7 @@
         border: none;
         background: white;
         span{
-            color: $dark-gray;
+            color: $text-color;
         }
         .icon {
             display: block;
@@ -77,7 +77,7 @@
         }
         &-text {
             font-size: 1rem;
-            color: $dark-gray;
+            color: $text-color;
         }
         &-accept {
             background: white;

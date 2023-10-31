@@ -3,40 +3,35 @@
 // -----------------------------------------------------------------------------
 // https://bootstrapvars.com/4.4/
 
-$red:                         #f05555;
+$light-gray:                  #dbdbdb;
 $gray-100:                    #f7f7f7;
 $gray-200:                    #e4e4e4;
 $gray-900:                    #30302e;
-$beige-100:                   #f0ebe3;
-$dark-black:                  #444;
-$darker-black:                #333;
-$black:                       #000000;
+$red:                         #f05555;
+$dark-black:                  #444444;
+$darker-black:                #333333;
 $orange:                      #f4623a;
-$brown:                       #5c4d42;
 $blue:                        #03a9f4;
-$green:                       #75d69c;
-$red:                         #D0011B;
-$light-blue:                  #27496d;
-$dark-blue:                   #142850;
-$dark-gray:                   #666;
-$light-gray:                  #dbdbdb;
+$white:                       #FFFFFF;
+$black:                       #000000;
 
 // Text Colors
-$header-color:                  $darker-black;
-$text-color-a:                  $black;
-$text-color:                    $darker-black;
+$header-color:                  $dark-black;
+$text-color-a:                  $dark-black;
+$text-color:                    $dark-black;
 $primary:                       $blue;
 $secondary:                     darken( $primary, 10% );
-$success:                       $green;
-$info:                          $gray-900;
-$warning:                       $primary;
-$danger:                        $red;
 
+$theme-colors: (
+  primary: $primary
+);
 
 // Font Family
 $font-family-roboto:            "Roboto", sans-serif;
 $font-family-natosans:          "Nato Sans", sans-serif;
 $font-family-opensans:          "Open Sans", sans-serif;
+$font-family-inter:             "Inter", sans-serif;
+$font-family-anton:             "Anton", sans-serif;
 
 // Font Size
 $font-size-base: 1rem;
@@ -96,11 +91,8 @@ $grid-breakpoints: (
 );
 
 // Font overrides
-$font-family-sans-serif: $font-family-opensans;
-$font-family-serif: $font-family-roboto;
-
-$font-family-base: $font-family-serif !default;
-$headings-font-family: $font-family-sans-serif !default;
+$font-family-base: $font-family-roboto !default;
+$headings-font-family: $font-family-inter !default;
 
 // Custom variables
 $navbar-height: 60px;

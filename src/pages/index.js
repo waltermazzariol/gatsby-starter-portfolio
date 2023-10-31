@@ -18,7 +18,6 @@ import Contact from "../components/Contact.js"
 import CookiesConsent from "../components/Cookies.js"
 import About from "../components/About";
 
-
 function IndexPage(props) {
 
   const contentJson = props.data.dataJson
@@ -48,7 +47,7 @@ function IndexPage(props) {
         <Reviews data={contentJson.team.person} />
       </Section>
 
-      <Section anchor={'services'} className={'services my-4'} fluid={true} rowClass={"g-0"}>
+      <Section anchor={'services'} className={'services my-5'}>
         <Services data={contentJson.services} />
       </Section>
 

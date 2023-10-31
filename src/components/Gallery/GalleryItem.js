@@ -16,7 +16,7 @@ function CreateGallery(props) {
 
     return (<>
       <Container className="gallery" fluid>
-        <Row>
+        <Row className="g-0">
             { props.data.map((key, index) => 
                 <Col xs={6} md={3} key={index}  className="g-0" onClick={()=> handlePortfolioClick(index)}>
                     <GatsbyImage image={key.image.childImageSharp.gatsbyImageData} alt={key.alt} />
