@@ -76,6 +76,7 @@ fragment aboutFields on DataJson {
     }
     text
     title
+    alt
   }
 }`
 
@@ -131,7 +132,7 @@ fragment contactFields on DataJson {
 export const galleryFields = graphql`
 fragment galleryFields on DataJson {
   gallery {
-    gallery {
+    list {
       alt
       image {
         publicURL

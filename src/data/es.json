@@ -44,22 +44,22 @@
     "gallery": {
         "id": 2,
         "title": "Some Pictures",
-        "gallery": [
+        "list": [
             {
                 "image": "./images/gallery/1.jpg",
-                "alt": "imagen 1"
+                "alt": "New york"
             },
             {
                 "image": "./images/gallery/2.jpg",
-                "alt": "imagen 1"
+                "alt": "Liberty"
             },
             {
                 "image": "./images/gallery/3.jpg",
-                "alt": "imagen 1"
+                "alt": "city ligths"
             },
             {
                 "image": "./images/gallery/4.jpg",
-                "alt": "imagen 1"
+                "alt": "NYC"
             }
         ]
     },
@@ -72,21 +72,21 @@
                 "type": "React - Frontend",
                 "link": "https://google.com",
                 "image": "./images/portfolio/1.jpg",
-                "alt": "imagen 1"
+                "alt": "personal trainer"
             },
             {
                 "name": "Best Burger in Town",
                 "type": "Delivery System",
                 "link": "https://google.com",
                 "image": "./images/portfolio/2.jpg",
-                "alt": "imagen 1"
+                "alt": "burger"
             },
             {
                 "name": "Tattoo Shop",
                 "type": "Appointment System",
                 "link": "https://google.com",
                 "image": "./images/portfolio/3.jpg",
-                "alt": "imagen 1"
+                "alt": "Tatto shop"
             }
         ]
     },
@@ -114,7 +114,9 @@
                 "text": "CSS3"
             }
         ],
-        "image": "./images/profile.jpg"
+        "image": "./images/profile.jpg",
+        "alt": "profile"
+
     },
     "team": {
         "title": "Reviews",

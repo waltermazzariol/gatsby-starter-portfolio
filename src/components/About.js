@@ -1,13 +1,13 @@
 import React from "react"
 import {Row, Col} from 'react-bootstrap'
 import List from "./Common/List"
-
+import { GatsbyImage } from "gatsby-plugin-image"
 function About(props) {
 
   return (
     <>
         <Col md="12" lg="5" align="text-center">
-          <img className="shadow-image img-fluid mb-4" src={props.data.image.publicURL} alt="profile" />
+            <GatsbyImage className="shadow-image img-fluid mb-4" image={props.data.image.childImageSharp.gatsbyImageData} alt={props.data.alt} />
          </Col>
         <Col md="12" lg="7">
             <div className="mb-4"> {props.data.text.split ('\n').map ((item, i) => <p key={i}>{item}</p>)}</div>

@@ -35,7 +35,7 @@ function IndexPage(props) {
 
       <Section anchor={'gallery'} className={'gallery'} fluid={true} rowClass={"g-0"}>
         <Title title={contentJson.gallery.title} />
-        <GalleryItem image={contentJson.gallery.gallery} />
+        <GalleryItem data={contentJson.gallery.list} />
       </Section>
 
       <Section anchor={'about'} className={'about'} >

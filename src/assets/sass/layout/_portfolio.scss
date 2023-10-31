@@ -1,8 +1,12 @@
 .grid-row {
   margin-bottom: 2rem;
   &-box {
-    position: relative;
-      display: block;
+      position: relative;
+      display: block;      
+      img{
+        aspect-ratio: 1 / 1;
+        width: 100%;
+      }
     &-over {
       display: flex;
       align-items: center;
@@ -21,7 +25,6 @@
         opacity: 0.4;
       }
     }
-
     &-title a {
       font-size: 1.3rem;
       

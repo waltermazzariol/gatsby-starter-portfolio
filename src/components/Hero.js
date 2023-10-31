@@ -3,7 +3,7 @@ import React from "react"
 function Hero(props) {
 
   return (
-    <div as={"header"} fluid={true} className="hero">
+    <div as={"header"} className="hero">
       <img className="hero-img" src={props.data.image.publicURL} alt="background"/>
       <div className="hero-wrapper d-flex flex-column justify-content-center align-items-center text-center" >
             <h1 className="hero-title">{props.data.title}</h1>
