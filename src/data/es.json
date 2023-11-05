@@ -1,8 +1,10 @@
 {
     "general": {
         "path": "/",
-        "siteurl": "https://modest-villani-fa0160.netlify.app",
+        "siteurl": "https://gatsby-starter-portfolio.netlify.app",
+        "seo-title": "React Developer - Est 1989",
         "seo-description": "React Developer - Est 1989",
+        "seo-image": "/seo.jpg",
         "ua": "",
         "lang": "en"
     },
@@ -176,10 +178,10 @@
         "image": "./images/footer.jpg"
     },
     "tags": {
-        "cookie-message": "We use our own and third party cookies to improve your user experience.",
-        "cookie-accept": "Accept",
-        "not-found-title": "404 not found",
-        "not-found-message": "You are in a wrong page.. Go back to our home",
-        "not-found-btn": "Home"
+        "cookie-message": "Utilizamos cookies propias y de terceros para mejorar tu experiencia de usuario.",
+        "cookie-accept": "Aceptar",
+        "not-found-title": "404 No se encuentra",
+        "not-found-message": "Estás en la página equivocada.. regresar al Inicio",
+        "not-found-btn": "Inicio"
     }
 }

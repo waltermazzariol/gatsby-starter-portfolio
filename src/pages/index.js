@@ -67,11 +67,7 @@ export default IndexPage
 export function Head(props) {
   return (
     <Seo 
-      page={'inicio'} 
-      title={props.data.dataJson.navigation.title} 
-      lang={props.data.dataJson.general.lang} 
       metas={props.data.dataJson.general} 
-      image={props.data.dataJson.about.image.publicURL} 
     />
   )
   }
