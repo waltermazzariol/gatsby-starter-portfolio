@@ -2,20 +2,18 @@ import React from "react"
 
 // Libraries 
 import { graphql } from "gatsby"
-import { CookiesProvider } from 'react-cookie';
 
 // Core components
 import Title from "../components/Common/Title"
 import Section from "../components/Common/Section"
 import Layout from "../components/Layout.js"
-import Seo from "../components/Seo.js"
+import Seo from "../components/Utils/Seo.js"
 import Hero from "../components/Hero.js"
 import Portfolio from "../components/Portfolio"
 import GalleryItem from "../components/Gallery/GalleryItem.js"
 import Reviews from "../components/Reviews.js"
 import Services from "../components/Services.js"
 import Contact from "../components/Contact.js"
-import CookiesConsent from "../components/Cookies.js"
 import About from "../components/About";
 
 function IndexPage(props) {
@@ -54,10 +52,6 @@ function IndexPage(props) {
       <Section anchor={'location'} className={'contact'} fluid={true} rowClass={"g-0"}>
         <Contact data={contentJson.contact} />
       </Section>
-
-      <CookiesProvider>
-        <CookiesConsent data={contentJson.tags} />
-      </CookiesProvider>
     </Layout >
   )
 }

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import Seo from "../components/Seo"
+import Seo from "../components/Utils/Seo"
 import Hero from "../components/Hero"
 
 const NotFoundPage = (props) => (
@@ -18,7 +18,7 @@ const NotFoundPage = (props) => (
         <div className="col-12 text-center">
           <h1>{props.data.dataJson.tags.not_found_title}</h1>
           <p>{props.data.dataJson.tags.not_found_message}</p>
-          <a className="btn btn-xl btn-primary text-white" href="/" >{props.data.dataJson.tags.not_found_btn}</a>
+          <a className="button-basic text-white" href="/" >{props.data.dataJson.tags.not_found_btn}</a>
         </div>
       </div>
     </div>

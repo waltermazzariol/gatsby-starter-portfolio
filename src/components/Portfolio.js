@@ -9,7 +9,7 @@ function Portfolio(props) {
                 <div key={index} className="col-sm-6 col-lg-4 grid-row">
                     {key.image !== undefined ?
                     <div className="col-12">
-                        <a className="grid-row-box shadow-image" href={key.link} target="_blank" rel="noopener noreferrer">
+                        <a className="grid-row-box" href={key.link} target="_blank" rel="noopener noreferrer">
                             <GatsbyImage image={key.image.childImageSharp.gatsbyImageData} alt={key.name} />
                             <div className="grid-row-box-over"></div>
                         </a>

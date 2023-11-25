@@ -63,7 +63,7 @@ export default class Layout extends React.Component {
         <Navbar nav={this.props.nav} />
         <main>{this.props.children}</main>
         <footer className="footer">
-          <div className="container">
+          <div className="container py-3 text-center">
             <div className="footer-text">Copyright &copy; 2023 - <a href="https://guarapomedia.com" target="_blank" rel="noopener noreferrer"><img src={logo} className="icon icon-logo" alt="Guarapo Media" /></a></div>
           </div>
         </footer>

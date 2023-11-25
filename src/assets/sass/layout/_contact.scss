@@ -1,20 +1,3 @@
 .contact {
-  background-color: $darker-black;
-  .text {
-    margin-bottom: 0.5rem;
-    color: #fff;
-    a {
-      color: #d7d7d7;
-    }
-  }
-
-  .social-contact {
-    a i {
-      margin: 1rem; 
-      color: white;
-      &:hover{
-        color: $primary;
-      }     
-    }
-  }
+  background-color: $darker-black;  
 }

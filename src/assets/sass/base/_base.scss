@@ -43,3 +43,9 @@ html * {
 .container-fluid{
   padding: 0;
 }
+
+.square-img{
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+}
