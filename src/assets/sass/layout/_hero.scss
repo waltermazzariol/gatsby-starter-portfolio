@@ -4,9 +4,11 @@
     background-size: cover;
     background-position: center center;
     background-color: $white;
-    overflow:hidden;
-    max-height: 600px;
     position:relative;
+	&-boxed{
+		overflow:hidden;
+    	max-height: 600px;
+	}
 	&-wrapper {
 		min-height: 600px;
 		position:relative;
@@ -18,13 +20,10 @@
 		height: 100%;
 		object-fit: cover;
 	}
-	h1.hero-title {
-		color: #ffffff;
+	.hero-title {
 		font-size: 2.5rem;
 		line-height: 3rem;
 		margin-bottom: 1rem;
-		text-align: center;
-		padding: 0 15px;
 		@media (min-width: 768px){
 			font-size: 3.5rem;
 			line-height: 4rem;
@@ -40,9 +39,11 @@
 		  }
 	}
 	.hero-subtitle {
-		color: #ffffff;
+		margin-bottom: 0.5rem;
+		font-size: 1.2rem;
+	}
+	.hero-pre-title {
 		margin-bottom: 0.5rem;
 		font-size: 1rem;
-		padding: 0 15px;
 	}
 }

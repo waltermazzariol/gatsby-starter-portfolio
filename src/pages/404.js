@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Seo from "../components/Utils/Seo"
-import Hero from "../components/Hero"
+import Hero from "../components/Hero/Hero"
 
 const NotFoundPage = (props) => (
   <Layout nav={props.data.dataJson.navigation} >

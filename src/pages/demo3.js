@@ -4,17 +4,17 @@ import React from "react"
 import { graphql } from "gatsby"
 
 // Core components
-import Title from "../components/Common/Title"
-import Section from "../components/Common/Section"
+import Title from "../components/Common/Title.js"
+import Section from "../components/Common/Section.js"
 import Layout from "../components/Layout.js"
 import Seo from "../components/Utils/Seo.js"
-import Hero from "../components/Hero/Hero.js"
-import Portfolio from "../components/Portfolio"
+import Hero from "../components/Hero/Hero3.js"
+import Portfolio from "../components/Portfolio.js"
 import GalleryItem from "../components/Gallery/GalleryItem.js"
 import Reviews from "../components/Reviews.js"
 import Services from "../components/Services.js"
 import Contact from "../components/Contact.js"
-import About from "../components/About";
+import About from "../components/About.js";
 
 function IndexPage(props) {
 

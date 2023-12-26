@@ -1,28 +1,53 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+// _buttons.scss
+
+// Define variables for button styles
+$button-padding: 0.5rem 1rem;
+$button-border-radius: 4px;
+$button-font-size: 0.85rem;
+$button-solid-bg: $primary;
+$button-solid-color: $white;
+$button-outline-border: 1px solid $primary;
+$button-outline-color: $primary;
+$button-font-fmaily: $headings-font-family;
+
+// Common styles for both buttons
+@mixin button-base() {
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  font-size: $button-font-size;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+}
+
+// Solid button
 .button {
-  max-width: 130px;
-  &-basic {
-    border: none;
-    border-radius: 4px;
-    padding: 0.5rem 1.5rem;
-    font-size: 0.85rem;
-    color: $white;
-    background-color: $primary;
-    a{
-      color: inherit;
-    }
-    i {
-      color: inherit;
-      font-size: 1rem;
-    }
-    &:focus {
-      outline: none;
-    }
-    &:hover {
-      text-decoration: none;
-      background-color: darken($primary, 10%)!important;
-    }
+  @include button-base();
+  background-color: $button-solid-bg;
+  color: $button-solid-color;
+
+  &:hover, &:active, &:focus {
+    background-color: darken($button-solid-bg, 10%);
+    color: $button-solid-color;
+  }
+}
+
+// Outline button
+.button-outline {
+  @include button-base();
+  border: $button-outline-border;
+  color: $button-outline-color;
+  background-color: transparent;
+
+  &:hover, &:active, &:focus {
+    background-color: $button-outline-color;
+    color: $button-solid-color;
   }
 }
