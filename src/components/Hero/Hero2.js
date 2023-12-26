@@ -8,7 +8,7 @@ function Hero2(props) {
       <div className="row">
       <div className="col-12 col-md-6 d-flex flex-column justify-content-center order-2 order-md-1 mb-3" >
             <Fade>
-              <div className="hero-pre-title">{props.data.title}</div>
+              <div className="hero-pre-title">{props.data.pretitle}</div>
               <h1 className="hero-title">{props.data.title}</h1>
               <div className="hero-subtitle">{props.data.subtitle}</div>
               <span>

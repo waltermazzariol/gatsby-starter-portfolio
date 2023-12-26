@@ -18,7 +18,6 @@ fragment navigationFields on DataJson {
   navigation {
     cta_button
     cta_link
-    cta_type
     logo_active
     logo_url{
       publicURL
@@ -59,8 +58,11 @@ fragment heroFields on DataJson {
           gatsbyImageData
         }
     }
+    pretitle
     subtitle
     title
+    cta_button
+    cta_link
   }
 }`
 

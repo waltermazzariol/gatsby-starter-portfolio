@@ -13,7 +13,7 @@
         "logo-active": false,
         "logo-url": "../assets/images/logo-wansite.svg",
         "cta-type": "whatsapp",
-        "cta-button": "Hire me!",
+        "cta-button": "Lets talk",
         "cta-link": "https://wa.me/555555555",
         "menu": [
             {
@@ -39,9 +39,12 @@
         ]
     },
     "hero": {
+        "pretitle": "est. 1989",
         "title": "Hey, I´m Joh Doe",
-        "subtitle": "Developer - Barcelona - est. 1989 ",
-        "image": "./images/hero.jpg"
+        "subtitle": "Developer in Barcelona",
+        "image": "./images/hero.jpg",
+        "cta-button": "Lets talk",
+        "cta-link": "https://wa.me/555555555"
     },
     "gallery": {
         "id": 2,
